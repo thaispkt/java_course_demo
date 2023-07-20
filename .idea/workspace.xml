@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="Bai tap buoi 3">
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi6_array.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi6_array_average.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi6_array_average.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi6_array_average.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689701106367</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Bai tap buoi 3">
+      <option name="closed" value="true" />
+      <created>1689856420710</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689856420710</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

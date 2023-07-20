@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class Baitapbuoi6_array_average {
+public class Baitapbuoi6_array_average_correct {
     public static void main(String[] args) {
-        int[] arr1 = new int[5];
+        float[] arr1 = new float[5];
         Scanner scanner = new Scanner(System.in);
 //        int sum = 0;
         float sum = 0;
         for (int i = 0; i < arr1.length; i++) {
             System.out.print("Enter the value of element "+i+" : ");
-            arr1[i]=scanner.nextInt();
+            arr1[i]=scanner.nextFloat();
             sum += arr1[i];
         }
         float average = sum/arr1.length; // cho nay neu khai bao sum la integer thi
@@ -17,6 +17,3 @@ public class Baitapbuoi6_array_average {
         System.out.printf("Avarage of array is %.2f",average);
     }
 }
-// Có hai kiểu dữ liệu số thực trong Java là float và double
-// float: single precision
-// double: double precision
