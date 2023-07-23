@@ -30,7 +30,7 @@ public class Baitapbuoi5_bai8 {
         } while (productAB > 0);
         float x = (float) Math.sqrt(-b / a);
         // print the value of 'x' with two decimal places
-        System.out.printf("The solution for the equation is x=%.2f", x);
+        System.out.printf("The solution for the equation is x = %.2f", x);
         scanner.close();
     }
 }
