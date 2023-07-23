@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="Bai tap buoi 6">
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi6_array_sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi6_function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5_bai1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5_bai2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5_bai3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5_bai4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5_bai5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5_bai6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5_bai7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5_bai8.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +44,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/nguye/JAVA_course/bcjava03_demo",
     "onboarding.tips.debug.path": "C:/Users/nguye/JAVA_course/bcjava03_demo/src/Main.java",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "Errors"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -111,5 +120,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
