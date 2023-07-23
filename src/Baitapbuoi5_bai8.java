@@ -15,17 +15,19 @@ public class Baitapbuoi5_bai8 {
             }
         } while (a == 0);
         float b = 0;
+        float productAB = 0;
         do {
             System.out.print("Enter b: ");
             b = scanner.nextFloat();
-            if (a * b > 0) {
+            productAB = a * b;
+            if (productAB > 0) {
                 if (a > 0) {
                     System.out.println("b must be negative number. Please try again.");
                 } else {
                     System.out.println("b must be positive number. Please try again.");
                 }
             }
-        } while (a * b > 0);
+        } while (productAB > 0);
         float x = (float) Math.sqrt(-b / a);
         // print the value of 'x' with two decimal places
         System.out.printf("The solution for the equation is x=%.2f", x);
