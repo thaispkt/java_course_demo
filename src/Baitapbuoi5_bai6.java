@@ -1,4 +1,4 @@
-//Bài tập 5: Viết chương trình xuất ra tiếng kêu của các con vật chó, mèo, chuột, ngựa. Trong đó người dùng sẽ nhập
+//Bài tập 6: Viết chương trình xuất ra tiếng kêu của các con vật chó, mèo, chuột, ngựa. Trong đó người dùng sẽ nhập
 // vào con vật mà người dùng muốn xem tiếng kêu. Ví dụ người dùng nhập chó chương trình sẽ xuất ra “gâu gâu”.
 
 import java.util.Scanner;
