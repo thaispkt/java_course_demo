@@ -15,6 +15,7 @@ public class Baitapbuoi4 {
         Scanner scanner = new Scanner(System.in);
         int[] array = EnterArray(scanner);
         printArray(array);
+        printArray2(array); // use foreach
         FindMaxNumber(array);
         FindFirstNegativeNumber(array);
         FindMaxNegativeNumber(array);
@@ -46,6 +47,12 @@ public class Baitapbuoi4 {
     public static void printArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.println("arr[" + i + "]=" + arr[i]);
+        }
+    }
+
+    public static void printArray2(int[] arr) {
+        for (int n : arr) {
+            System.out.println(" n = " + n);
         }
     }
 
