@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="Bai tap buoi 4-5" />
+    <list default="true" id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="Bai tap buoi 4-5">
+      <change afterPath="$PROJECT_DIR$/src/GitPullBeforeCoding.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
