@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Baitapbuoi6_array_sum {
     public static void main(String[] args) {
         int[] arr1 = new int[5];

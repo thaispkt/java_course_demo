@@ -29,7 +29,8 @@ public class Baitapbuoi6_function {
         System.out.println("Sum of array elements: " + sumArray(arr1));
 
     }
-    public static void sum(int num1, int num2) { // khi dat function name thi viet thuong chu cai dau, tranh trung voi class name
+    public static void sum(int num1, int num2) { // khi dat function name thi viet thuong chu cai
+        //  dau, tranh trung voi class name
         int total = num1 + num2;
         System.out.println("Sum is " + total);
         if(total > 5) {

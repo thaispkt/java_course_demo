@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="Bai tap buoi 6">
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi6_array_sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi6_function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi6_array_sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi6_array_sum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi6_function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi6_function.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +39,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/nguye/JAVA_course/bcjava03_demo",
     "onboarding.tips.debug.path": "C:/Users/nguye/JAVA_course/bcjava03_demo/src/Main.java",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -84,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689857656929</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Bai tap buoi 6">
+      <option name="closed" value="true" />
+      <created>1689862281442</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689862281442</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
