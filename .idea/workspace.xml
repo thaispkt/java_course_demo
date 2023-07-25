@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="Bai tap buoi 4-5">
-      <change afterPath="$PROJECT_DIR$/src/GitPullBeforeCoding.txt" afterDir="false" />
+    <list default="true" id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="Git pull before code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690294569089</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Git pull before code">
+      <option name="closed" value="true" />
+      <created>1690299341148</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690299341148</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +221,8 @@
     <MESSAGE value="Optimze execise Baitapbuoi5_bai8" />
     <MESSAGE value="Fix space x = %.2f" />
     <MESSAGE value="Bai tap buoi 4-5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bai tap buoi 4-5" />
+    <MESSAGE value="Git pull before code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Git pull before code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

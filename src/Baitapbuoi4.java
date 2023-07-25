@@ -12,8 +12,19 @@ import java.util.Scanner;
 */
 public class Baitapbuoi4 {
     public static void main(String[] args) {
+//        int[] array = EnterArray(scanner); // C2
+//        EnterArray(scanner, array);
         Scanner scanner = new Scanner(System.in);
-        int[] array = EnterArray(scanner);
+        int arrSize = 0;
+        do {
+            System.out.print("Enter the array size: ");
+            arrSize = scanner.nextInt();
+            if (arrSize <= 0) {
+                System.out.println("Array size cannot be zero or negative. Try again");
+            }
+        } while (arrSize <= 0);
+        int[] array = new int[arrSize];
+        inputArrayElelement(scanner,array);
         printArray(array);
         printArray2(array); // use foreach
         FindMaxNumber(array);
@@ -26,7 +37,7 @@ public class Baitapbuoi4 {
         scanner.close();
     }
 
-    public static int[] EnterArray(Scanner scanner) {
+    public static int[] EnterArray(Scanner scanner, int[] arr) {
         int arrSize = 0;
         do {
             System.out.print("Enter the array size: ");
@@ -35,14 +46,20 @@ public class Baitapbuoi4 {
                 System.out.println("Array size cannot be zero or negative. Try again");
             }
         } while (arrSize <= 0);
-        int arr[] = new int[arrSize];
+        arr = new int[arrSize];
         for (int i = 0; i < arr.length; i++) {
             System.out.print("Enter the value for element " + i + " in array: ");
             arr[i] = scanner.nextInt();
         }
         return arr;
     }
-
+    public static int[] inputArrayElelement(Scanner scanner, int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print("Enter the value for element " + i + " in array: ");
+            arr[i] = scanner.nextInt();
+        }
+        return arr;
+    }
     //
     public static void printArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
