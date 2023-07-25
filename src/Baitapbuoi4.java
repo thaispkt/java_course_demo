@@ -52,8 +52,7 @@ public class Baitapbuoi4 {
     public static void FindMaxNumber(int[] arr) {
         int largestNum = arr[0];
         int largestNumIndex = 0;
-        // 1 2 3 4 5
-        // 5 4 3 2 1
+
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] > largestNum) {
                 largestNum = arr[i];
@@ -66,8 +65,7 @@ public class Baitapbuoi4 {
     public static void FindFirstNegativeNumber(int[] arr) {
         int FirstNegativeNum = 0;
         int FirstNegativeNumIndex = -1;
-        // 1 2 3 4 5
-        // 5 4 3 2 1
+
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < 0) {
                 FirstNegativeNum = arr[i];
