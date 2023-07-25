@@ -12,7 +12,8 @@ import java.util.Scanner;
 */
 public class Baitapbuoi4 {
     public static void main(String[] args) {
-        int[] array = EnterArray();
+        Scanner scanner = new Scanner(System.in);
+        int[] array = EnterArray(scanner);
         printArray(array);
         FindMaxNumber(array);
         FindFirstNegativeNumber(array);
@@ -20,11 +21,11 @@ public class Baitapbuoi4 {
         SumEvenNumber(array);
         CountNegativeNumber(array);
         SumNegativeNumber(array);
-        FindX(array);
+        FindX(scanner, array);
+        scanner.close();
     }
 
-    public static int[] EnterArray() {
-        Scanner scanner = new Scanner(System.in);
+    public static int[] EnterArray(Scanner scanner) {
         int arrSize = 0;
         do {
             System.out.print("Enter the array size: ");
@@ -38,10 +39,10 @@ public class Baitapbuoi4 {
             System.out.print("Enter the value for element " + i + " in array: ");
             arr[i] = scanner.nextInt();
         }
-//        scanner.close();
         return arr;
     }
-//
+
+    //
     public static void printArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.println("arr[" + i + "]=" + arr[i]);
@@ -78,8 +79,7 @@ public class Baitapbuoi4 {
             System.out.println("Not found negative number in the array");
         } else {
             System.out.println("The first negative number in the array is " + FirstNegativeNum +
-                    " at " +
-                    "index " + FirstNegativeNumIndex);
+                    " at " + "index " + FirstNegativeNumIndex);
         }
     }
 
@@ -97,9 +97,8 @@ public class Baitapbuoi4 {
         if (MaxNegativeNumIndex == -1) {
             System.out.println("Not found negative number in the array");
         } else {
-            System.out.println("The max negative number in the array is " + MaxNegativeNum +
-                    " at " +
-                    "index " + MaxNegativeNumIndex);
+            System.out.println("The max negative number in the array is " + MaxNegativeNum + " at" +
+                    " " + "index " + MaxNegativeNumIndex);
         }
     }
 
@@ -133,8 +132,7 @@ public class Baitapbuoi4 {
         System.out.println("Sum of negative numbers is " + sum);
     }
 
-    public static void FindX(int[] arr) {
-        Scanner scanner = new Scanner(System.in);
+    public static void FindX(Scanner scanner, int[] arr) {
         System.out.print("Enter x: ");
         int x = scanner.nextInt();
         boolean isFound = false;
@@ -149,6 +147,5 @@ public class Baitapbuoi4 {
         } else {
             System.out.println("Not found x in array");
         }
-        scanner.close();
     }
 }
