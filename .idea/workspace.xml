@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="Bai tap buoi 6">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi6_array_sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi6_array_sum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi6_function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi6_function.java" afterDir="false" />
-    </list>
+    <list default="true" id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="Fix space x = %.2f" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +37,7 @@
     "last_opened_file_path": "C:/Users/nguye/JAVA_course/bcjava03_demo",
     "onboarding.tips.debug.path": "C:/Users/nguye/JAVA_course/bcjava03_demo/src/Main.java",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+    "settings.editor.selected.configurable": "Errors"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -90,13 +83,77 @@
     </task>
     <task id="LOCAL-00005" summary="Bai tap buoi 6">
       <option name="closed" value="true" />
-      <created>1689862281442</created>
+      <created>1690129958318</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1689862281442</updated>
+      <updated>1690129958318</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Bai tap buoi 5">
+      <option name="closed" value="true" />
+      <created>1690129981391</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690129981391</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Optimze execise Baitapbuoi5_bai8">
+      <option name="closed" value="true" />
+      <created>1690130428907</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690130428907</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Optimze execise Baitapbuoi5_bai8">
+      <option name="closed" value="true" />
+      <created>1690130438860</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690130438860</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Optimze execise Baitapbuoi5_bai8">
+      <option name="closed" value="true" />
+      <created>1690130546673</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690130546673</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Optimze execise Baitapbuoi5_bai8">
+      <option name="closed" value="true" />
+      <created>1690130596369</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690130596369</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Optimze execise Baitapbuoi5_bai8">
+      <option name="closed" value="true" />
+      <created>1690130730480</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690130730480</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix space x = %.2f">
+      <option name="closed" value="true" />
+      <created>1690130820562</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690130820562</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fix space x = %.2f">
+      <option name="closed" value="true" />
+      <created>1690130874051</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690130874051</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -106,7 +163,10 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Bai tap buoi 3" />
     <MESSAGE value="Bai tap buoi 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bai tap buoi 6" />
+    <MESSAGE value="Bai tap buoi 5" />
+    <MESSAGE value="Optimze execise Baitapbuoi5_bai8" />
+    <MESSAGE value="Fix space x = %.2f" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix space x = %.2f" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -123,5 +183,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
