@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="Git pull before code">
+    <list default="true" id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="Add .name file">
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai1/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai1/StudentApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai2/Rectangular.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai2/RectangularApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +199,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690299341148</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Change array to global variable">
+      <option name="closed" value="true" />
+      <created>1690300392143</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1690300392143</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Change array to global variable">
+      <option name="closed" value="true" />
+      <created>1690300413097</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1690300413097</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,7 +241,8 @@
     <MESSAGE value="Fix space x = %.2f" />
     <MESSAGE value="Bai tap buoi 4-5" />
     <MESSAGE value="Git pull before code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Git pull before code" />
+    <MESSAGE value="Change array to global variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change array to global variable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
