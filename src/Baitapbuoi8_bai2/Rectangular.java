@@ -1,5 +1,7 @@
 package Baitapbuoi8_bai2;
 
+import java.util.Scanner;
+
 /*
 Xây dựng lớp đối tượng quản lý hình chữ nhật và cài đặt các phương thức tính chu vi và diện tích
 của hình chữ nhật.
@@ -25,22 +27,27 @@ public class Rectangular {
         this.width = width;
         this.length = length;
     }
-
-    public void setInfo(float width, float length) {
-        this.width = width;
-        this.length = length;
+    Rectangular() {};
+    public void enterInfo() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter width: ");
+        this.width = scanner.nextFloat();
+        System.out.print("Enter length: ");
+        this.length = scanner.nextFloat();
     }
 
     public void printInfo() {
         System.out.println("width=" + this.width);
-        System.out.println("width=" + this.length);
+        System.out.println("length=" + this.length);
     }
 
     public void calcArea() {
         this.area = this.width * this.length;
+        System.out.println("Area of rectA: " + this.area);
     }
 
     public void calcPerimeter() {
         this.perimeter = (this.width + this.length) * 2;
+        System.out.println("Perimeter of rectA: " + this.perimeter);
     }
 }
