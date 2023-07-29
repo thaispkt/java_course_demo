@@ -1,6 +1,6 @@
-package Baitapbuoi5;
+package Baitapbuoi8_bai3;
 
 public class Student {
     String name;
-    int birthYear;
+    int age;
 }

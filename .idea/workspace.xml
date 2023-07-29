@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Submit bai 1 -&gt; bai 7">
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai8.java" afterDir="false" />
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Check case &quot;No male officer found in the above list&quot; in bai7">
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Student2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai3/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai3/StudentApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai4/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai4/StudentApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi5/Baitapbuoi5_bai5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi5/Baitapbuoi5_bai5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi5/Baitapbuoi5_bai7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi5/Baitapbuoi5_bai7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi5/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi5/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Student1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +47,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/nguye/JAVA_course/bcjava03_demo",
+    "last_opened_file_path": "G:/My Drive/JAVA_course/java_course_demo/src/Baitapbuoi8_bai4",
     "onboarding.tips.debug.path": "C:/Users/nguye/JAVA_course/bcjava03_demo/src/Main.java",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\My Drive\JAVA_course\java_course_demo\src\Baitapbuoi8_bai4" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -253,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690609311253</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Check case &quot;No male officer found in the above list&quot; in bai7">
+      <option name="closed" value="true" />
+      <created>1690610194085</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1690610194085</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -283,7 +305,8 @@
     <MESSAGE value="Bai tap buoi 8 - bai 2" />
     <MESSAGE value="Fixing enterInfo() method" />
     <MESSAGE value="Submit bai 1 -&gt; bai 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Submit bai 1 -&gt; bai 7" />
+    <MESSAGE value="Check case &quot;No male officer found in the above list&quot; in bai7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Check case &quot;No male officer found in the above list&quot; in bai7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -7,9 +7,9 @@ public class Baitapbuoi5_bai5 {
     private static final int STUDENT_NUM_MAX = 3;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Student[] students = new Student[STUDENT_NUM_MAX];
+        Student1[] students = new Student1[STUDENT_NUM_MAX];
         for (int i = 0; i < students.length; i++) {
-            students[i] = new Student();
+            students[i] = new Student1();
             System.out.print("Enter name of student " + (i + 1) + ": ");
             students[i].name = scanner.nextLine();
             System.out.print("Enter birth year of student " + (i + 1) + ": ");
