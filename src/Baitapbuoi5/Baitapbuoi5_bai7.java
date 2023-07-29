@@ -24,10 +24,6 @@ public class Baitapbuoi5_bai7 {
         int MenOfficerBirthYearMin = 0;
         int MenOfficerBirthYearMinIndex = -1;
         for (int i = 0; i < officers.length; i++) {
-            /*
-            System.out.println("Officer " + (i+1) + ": "+ officers[i].name + ", birth year: " + officers[i].birthYear
-                    + ", gender: " + (officers[i].gender ? "Male" : "Female"));
-             */
             if (officers[i].gender == true) {
                 if (isFirstManOfficer) {
                     MenOfficerBirthYearMin = officers[i].birthYear;
