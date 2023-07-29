@@ -24,5 +24,6 @@ public class Baitapbuoi5_bai6 {
         }
         System.out.println("The number of even numbers: "+ evenNumCount);
         System.out.println("The number of odd numbers: "+ oddNumCount);
+        scanner.close();
     }
 }

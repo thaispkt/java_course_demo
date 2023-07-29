@@ -24,5 +24,6 @@ public class Baitapbuoi5_bai1 {
             max = c;
         }
         System.out.println("Max of a, b and c is: " + max);
+        scanner.close();
     }
 }

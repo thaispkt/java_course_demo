@@ -44,5 +44,6 @@ public class Baitapbuoi5_bai7 {
         } else {
             System.out.println("The youngest male officer: " + officers[MenOfficerBirthYearMinIndex].name);
         }
+        scanner.close();
     }
 }

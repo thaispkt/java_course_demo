@@ -16,6 +16,7 @@ public class Baitapbuoi5_bai2 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter n: ");
         int n = scanner.nextInt();
+        scanner.close();
         if (n % 2 == 0) {
             return true;
         } else {

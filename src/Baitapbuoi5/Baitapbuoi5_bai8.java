@@ -35,5 +35,6 @@ public class Baitapbuoi5_bai8 {
             }
         }
         System.out.println("The student farthest from the university is: " + students[farthestDistanceIndex].name);
+        scanner.close();
     }
 }
