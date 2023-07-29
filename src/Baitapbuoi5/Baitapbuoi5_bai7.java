@@ -5,6 +5,7 @@ import java.util.Scanner;
 //7.	Cho biết tên, năm sinh và giới tính của 3 cán bộ. Hãy viết chương trình tìm và in tên cán bộ Nam trẻ nhất.
 public class Baitapbuoi5_bai7 {
     private static final int OFFICER_NUM_MAX = 3;
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Officer[] officers = new Officer[OFFICER_NUM_MAX];
@@ -21,23 +22,27 @@ public class Baitapbuoi5_bai7 {
 
         boolean isFirstManOfficer = true;
         int MenOfficerBirthYearMin = 0;
-        int MenOfficerBirthYearMinIndex = 0;
+        int MenOfficerBirthYearMinIndex = -1;
         for (int i = 0; i < officers.length; i++) {
             /*
             System.out.println("Officer " + (i+1) + ": "+ officers[i].name + ", birth year: " + officers[i].birthYear
                     + ", gender: " + (officers[i].gender ? "Male" : "Female"));
              */
-            if(officers[i].gender == true) {
-                if(isFirstManOfficer) {
+            if (officers[i].gender == true) {
+                if (isFirstManOfficer) {
+                    MenOfficerBirthYearMin = officers[i].birthYear;
                     MenOfficerBirthYearMinIndex = i;
                     isFirstManOfficer = false;
+                } else if (officers[i].birthYear < MenOfficerBirthYearMin) {
                     MenOfficerBirthYearMin = officers[i].birthYear;
-                } else if(officers[i].birthYear < MenOfficerBirthYearMin) {
                     MenOfficerBirthYearMinIndex = i;
-                    MenOfficerBirthYearMin = officers[i].birthYear;
                 }
             }
         }
-        System.out.println("The youngest officer: " + officers[MenOfficerBirthYearMinIndex].name);
+        if (MenOfficerBirthYearMinIndex == -1) {
+            System.out.println("No male officer found in the above list");
+        } else {
+            System.out.println("The youngest male officer: " + officers[MenOfficerBirthYearMinIndex].name);
+        }
     }
 }

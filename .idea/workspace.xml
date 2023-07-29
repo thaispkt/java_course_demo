@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Officer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Student.java" afterDir="false" />
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Submit bai 1 -&gt; bai 7">
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai8.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +237,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690470464965</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Submit bai 1 -&gt; bai 7">
+      <option name="closed" value="true" />
+      <created>1690609285283</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1690609285283</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Submit bai 1 -&gt; bai 7">
+      <option name="closed" value="true" />
+      <created>1690609311253</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1690609311253</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,7 +282,8 @@
     <MESSAGE value="Change array to global variable" />
     <MESSAGE value="Bai tap buoi 8 - bai 2" />
     <MESSAGE value="Fixing enterInfo() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing enterInfo() method" />
+    <MESSAGE value="Submit bai 1 -&gt; bai 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Submit bai 1 -&gt; bai 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
