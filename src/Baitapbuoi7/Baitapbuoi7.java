@@ -62,7 +62,7 @@ public class Baitapbuoi7 {
                 break;
             case 5:
                 result = FindLastEvenInt(arr);
-                if (result == 0) {
+                if (result == -1) {
                     System.out.println("No even integer found in the list");
                 } else {
                     System.out.println("Last even integer: " + result);
@@ -70,7 +70,7 @@ public class Baitapbuoi7 {
                 break;
             case 6:
                 result = FindFirstEvenInt(arr);
-                if (result == 0) {
+                if (result == -1) {
                     System.out.println("No even integer found in the list");
                 } else {
                     System.out.println("First even integer: " + result);
@@ -94,7 +94,7 @@ public class Baitapbuoi7 {
                 break;
             case 9:
                 result = FindMinEvenInt(arr);
-                if (result == 0) {
+                if (result == -1) {
                     System.out.println("No even integer found in the list");
                 } else {
                     System.out.println("Min even number: " + result);
@@ -165,7 +165,7 @@ public class Baitapbuoi7 {
     }
 
     public static int FindLastEvenInt(int[] arr) {
-        int lastEvenInt = 0;
+        int lastEvenInt = -1;
         for (int num: arr) {
             if (num % 2 == 0) {
                 lastEvenInt = num;
@@ -175,7 +175,7 @@ public class Baitapbuoi7 {
     }
 
     public static int FindFirstEvenInt(int[] arr) {
-        int firstEvenInt = 0;
+        int firstEvenInt = -1;
         for (int num:arr) {
             if (num % 2 == 0) {
                 firstEvenInt = num;
@@ -212,7 +212,7 @@ public class Baitapbuoi7 {
         return num;
     }
     public static int FindMinEvenInt(int[] arr) {
-        int min = 0;
+        int min = -1;
         for (int num: arr) {
             if (num % 2 == 0) {
                 if (num < min) {
