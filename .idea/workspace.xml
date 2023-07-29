@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="Fixing enterInfo() method">
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Officer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class_UML.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/Class_UML.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi8_bai2/Rectangular.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi8_bai2/Rectangular.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi8_bai2/RectangularApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi8_bai2/RectangularApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai2/Rectangular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai2/Rectangular.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai2/RectangularApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai2/RectangularApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,22 +39,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nguye/JAVA_course/bcjava03_demo&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/nguye/JAVA_course/bcjava03_demo/src/Main.java&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/nguye/JAVA_course/bcjava03_demo",
+    "onboarding.tips.debug.path": "C:/Users/nguye/JAVA_course/bcjava03_demo/src/Main.java",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1ab689f2-39f8-495b-8f98-9f1d52224438" name="Changes" comment="" />
+      <changelist id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="" />
       <created>1689675360432</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -232,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690465807938</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Fixing enterInfo() method">
+      <option name="closed" value="true" />
+      <created>1690470464965</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1690470464965</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
