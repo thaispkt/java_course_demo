@@ -16,7 +16,7 @@ public class Baitapbuoi5_bai5 {
             students[i].birthYear = scanner.nextInt();
             scanner.nextLine(); // Consume the newline character left in the buffer
         }
-        int birthYearMin = students[0].birthYear;;
+        int birthYearMin = students[0].birthYear;
         int birthYearMinIndex = 0;
         for (int i = 1; i < students.length; i++) {
             if (students[i].birthYear < birthYearMin) {
