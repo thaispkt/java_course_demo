@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Remove comment for ex7" />
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Fix return -1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -310,7 +312,31 @@
       <option name="project" value="LOCAL" />
       <updated>1690648504254</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Remove comment for ex7">
+      <option name="closed" value="true" />
+      <created>1690648963229</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1690648963229</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Remove comment for ex7">
+      <option name="closed" value="true" />
+      <created>1690648984143</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1690648984143</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Fix return -1">
+      <option name="closed" value="true" />
+      <created>1690649183288</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1690649183288</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -345,7 +371,8 @@
     <MESSAGE value="Add scanner.close()" />
     <MESSAGE value="Submit exercise 7" />
     <MESSAGE value="Remove comment for ex7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove comment for ex7" />
+    <MESSAGE value="Fix return -1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix return -1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

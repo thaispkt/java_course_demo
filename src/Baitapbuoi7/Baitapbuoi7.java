@@ -61,44 +61,20 @@ public class Baitapbuoi7 {
                 }
                 break;
             case 5:
-                result = FindLastEvenInt(arr);
-                if (result == -1) {
-                    System.out.println("No even integer found in the list");
-                } else {
-                    System.out.println("Last even integer: " + result);
-                }
+                System.out.println("Last even integer: " + FindLastEvenInt(arr));
                 break;
             case 6:
-                result = FindFirstEvenInt(arr);
-                if (result == -1) {
-                    System.out.println("No even integer found in the list");
-                } else {
-                    System.out.println("First even integer: " + result);
-                }
+                System.out.println("First even integer: " + FindFirstEvenInt(arr));
                 break;
             case 7:
                 result = FindFirstPrimeNum(arr);
-                if (result == -1) {
-                    System.out.println("No prime number found in the list");
-                } else {
-                    System.out.println("First prime number: " + result);
-                }
+                System.out.println("First prime number: " + FindFirstPrimeNum(arr));
                 break;
             case 8:
-                result = FindLastPosInt(arr);
-                if (result == -1) {
-                    System.out.println("No positive integer found in the list");
-                } else {
-                    System.out.println("Last positive integer: " + result);
-                }
+                System.out.println("Last positive integer: " + FindLastPosInt(arr));
                 break;
             case 9:
-                result = FindMinEvenInt(arr);
-                if (result == -1) {
-                    System.out.println("No even integer found in the list");
-                } else {
-                    System.out.println("Min even number: " + result);
-                }
+                System.out.println("Min even number: " + FindMinEvenInt(arr));
                 break;
             default:
                 System.out.println("Invalid option");
