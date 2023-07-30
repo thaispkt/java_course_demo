@@ -49,7 +49,7 @@ public class Baitapbuoi5_bai4 {
                     System.out.println("Exiting program");
                     break;
                 default:
-                    System.out.println("Invalid choice");
+                    System.out.println("Invalid choice. Try again");
                     break;
             }
         } while (choice != 0);
