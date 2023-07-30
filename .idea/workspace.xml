@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Fix return -1">
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Fix menu">
+      <change afterPath="$PROJECT_DIR$/src/Notes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi7/Baitapbuoi7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi7/Baitapbuoi7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Baitapbuoi7/Baitapbuoi7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi7/Baitapbuoi7.java" afterDir="false" />
@@ -362,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690675488723</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Fix menu">
+      <option name="closed" value="true" />
+      <created>1690683002211</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1690683002211</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -398,7 +407,8 @@
     <MESSAGE value="Submit exercise 7" />
     <MESSAGE value="Remove comment for ex7" />
     <MESSAGE value="Fix return -1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix return -1" />
+    <MESSAGE value="Fix menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -413,11 +423,25 @@
           <line>5</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Baitapbuoi7/Baitapbuoi7.java</url>
+          <line>161</line>
+          <properties class="Baitapbuoi7.Baitapbuoi7" method="FindFirstPrimeNum">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bcjava03_demo_iml$Baitapbuoi7.ic" NAME="Baitapbuoi7 Coverage Results" MODIFIED="1690684839719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Baitapbuoi7.*</FILTER>
+    </SUITE>
   </component>
 </project>
