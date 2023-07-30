@@ -7,15 +7,15 @@ import java.util.Scanner;
 •	Tính điểm trung bình từng sinh viên ( T + L + H)/3
 •	Xếp loại từng sinh viên theo: >=9 -> Xuất Sắc, 9<Giỏi<=8, 8<Khá<=7, <7<=6, <=5, còn lại Yếu.
  */
-public class StudentApp {
+public class StudentApp_bai1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number of students: ");
         int N = scanner.nextInt();
         scanner.nextLine(); // Consume the left new line character in buffer
-        Student[] students = new Student[N];
+        Student1[] students = new Student1[N];
         for (int i = 0; i < students.length; i++) {
-            students[i] = new Student();
+            students[i] = new Student1();
             System.out.print("Enter student name: ");
             students[i].name = scanner.nextLine();
             System.out.print("Enter student id: ");
@@ -30,7 +30,7 @@ public class StudentApp {
         }
         System.out.println("Student Ranking:");
         System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
-        for (Student student: students) {
+        for (Student1 student: students) {
             student.calcScoreAverage();
             student.ranking();
             System.out.printf("%-20s %-10s %-15.2f %s%n", student.name, student.id, student.averageScore, student.rank);
