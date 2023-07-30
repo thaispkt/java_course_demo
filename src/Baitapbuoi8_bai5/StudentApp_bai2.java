@@ -87,12 +87,12 @@ public class StudentApp_bai2 {
                 "Hoàng", "Võ", "Bùi"
         };
         String[] middleNames = {
-                "Anh", "Chí", "Duy", "Đức", "Hoàng", "Hương", "Khánh", "Linh", "Minh",
+                "Anh", "Chí", "Duy", "Hoàng", "Hương", "Khánh", "Minh",
                 "Ngọc", "Quốc", "Thanh", "Thảo", "Thi", "Trang", "Vân", "Việt", "Xuân", "Thị",
                 "Văn", "Hữu", "Quang", "Thịnh"
         };
         String[] lastNames = {
-                "Anh", "Bảo", "Bình", "Cường", "Đức", "Duy", "Hoàng", "Huy", "Minh", "Nam",
+                "Anh", "Bảo", "Bình", "Cường", "Đức", "Duy", "Hoàng", "Huy", "Nam",
                 "Tuấn", "Việt", "Châu", "Chi", "Diệp", "Hương", "Linh", "Mai", "Ngọc",
                 "Phương", "Quỳnh", "Trang", "Vân", "Hưng", "Trung", "Minh", "Hà", "Thành", "Quang"
         };
