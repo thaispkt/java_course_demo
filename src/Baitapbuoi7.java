@@ -25,6 +25,7 @@ public class Baitapbuoi7 {
             arr[i] = scanner.nextInt();
         }
         scanner.nextLine(); // consume the left new line character in buffer
+        System.out.println("Menu: ");
         System.out.println("b. Sum of positive integers");
         System.out.println("c. Sum of odd integers");
         System.out.println("d. Number of positive integers");
