@@ -26,60 +26,68 @@ public class Baitapbuoi7 {
             System.out.print("Enter value of number " + (i + 1) + ": ");
             arr[i] = scanner.nextInt();
         }
-        System.out.println("0. Sum of positive integers");
-        System.out.println("1. Sum of odd integers");
-        System.out.println("2. Count of positive integers");
-        System.out.println("3. Find min integer");
-        System.out.println("4. Find min positive integer");
-        System.out.println("5. Find the last even integer");
-        System.out.println("6. Find the fist even integer");
-        System.out.println("7. Find the first prime number");
-        System.out.println("8. Find the last positive integer");
-        System.out.println("9. Find the min even number");
+        scanner.nextLine(); // consume the left new line character in buffer
+        System.out.println("Choose an choice:");
+        System.out.println("b. Sum of positive integers");
+        System.out.println("c. Sum of odd integers");
+        System.out.println("d. Number of positive integers");
+        System.out.println("e. Find min integer");
+        System.out.println("f. Find min positive integer");
+        System.out.println("g. Find the last even integer");
+        System.out.println("h. Find the fist even integer");
+        System.out.println("i. Find the first prime number");
+        System.out.println("j. Find the last positive integer");
+        System.out.println("k. Find the min even number");
+        System.out.println("l. Exit");
         System.out.print("Choose the menu: ");
-        String option = scanner.nextLine();
+        String choice = scanner.nextLine();
         int result;
-        switch (option) {
-            case "b": // b. Tổng các số dương
-                System.out.println("Sum of positive integers: " + sumPosInt(arr));
-                break;
-            case "c": // c. Tính tổng các số lẻ.
-                System.out.println("Sum of odd integers: " + sumOddInt(arr));
-                break;
-            case "d": // d. Đếm có bao nhiêu số dương.
-                System.out.println("Count of positive integers: " + countPosInt(arr));
-                break;
-            case "e": // e. Tìm số nhỏ nhất trong mảng.
-                System.out.println("Minimum integer: " + FindMinInt(arr));
-                break;
-            case "f": // f. Tìm số dương nhỏ nhất trong mảng
-                result = FindMinPosInt(arr);
-                if (result == 0) {
-                    System.out.println("No positive integer found in the list");
-                } else {
-                    System.out.println("Minimum positive integer: " + result);
-                }
-                break;
-            case "g": // g. Tìm số chẵn cuối cùng trong mảng 1 chiều các số nguyên
-                System.out.println("Last even integer: " + FindLastEvenInt(arr));
-                break;
-            case "h": // h. Viết hàm tìm số chẵn đầu tiên trong mảng các số nguyên
-                System.out.println("First even integer: " + FindFirstEvenInt(arr));
-                break;
-            case "i": // Tìm số nguyên tố đầu tiên trong mảng 1 chiều các số nguyên.
-                result = FindFirstPrimeNum(arr);
-                System.out.println("First prime number: " + FindFirstPrimeNum(arr));
-                break;
-            case "j": // j. Tìm số dương cuối cùng trong mảng số nguyên.
-                System.out.println("Last positive integer: " + FindLastPosInt(arr));
-                break;
-            case "k": // k. Hãy tìm giá trị chẵn nhỏ nhất trong mảng 1 chiều các số nguyên.
-                System.out.println("Min even number: " + FindMinEvenInt(arr));
-                break;
-            default:
-                System.out.println("Invalid option");
-                break;
-        }
+        do {
+            switch (choice) {
+                case "b": // b. Tổng các số dương
+                    System.out.println("Sum of positive integers: " + sumPosInt(arr));
+                    break;
+                case "c": // c. Tính tổng các số lẻ.
+                    System.out.println("Sum of odd integers: " + sumOddInt(arr));
+                    break;
+                case "d": // d. Đếm có bao nhiêu số dương.
+                    System.out.println("Number of positive integers: " + countPosInt(arr));
+                    break;
+                case "e": // e. Tìm số nhỏ nhất trong mảng.
+                    System.out.println("Minimum integer: " + FindMinInt(arr));
+                    break;
+                case "f": // f. Tìm số dương nhỏ nhất trong mảng
+                    result = FindMinPosInt(arr);
+                    if (result == 0) {
+                        System.out.println("No positive integer found in the list");
+                    } else {
+                        System.out.println("Minimum positive integer: " + result);
+                    }
+                    break;
+                case "g": // g. Tìm số chẵn cuối cùng trong mảng 1 chiều các số nguyên
+                    System.out.println("Last even integer: " + FindLastEvenInt(arr));
+                    break;
+                case "h": // h. Viết hàm tìm số chẵn đầu tiên trong mảng các số nguyên
+                    System.out.println("First even integer: " + FindFirstEvenInt(arr));
+                    break;
+                case "i": // Tìm số nguyên tố đầu tiên trong mảng 1 chiều các số nguyên.
+                    result = FindFirstPrimeNum(arr);
+                    System.out.println("First prime number: " + FindFirstPrimeNum(arr));
+                    break;
+                case "j": // j. Tìm số dương cuối cùng trong mảng số nguyên.
+                    System.out.println("Last positive integer: " + FindLastPosInt(arr));
+                    break;
+                case "k": // k. Hãy tìm giá trị chẵn nhỏ nhất trong mảng 1 chiều các số nguyên.
+                    System.out.println("Min even number: " + FindMinEvenInt(arr));
+                    break;
+                case "l": // l. Exit
+                    System.out.println("Exiting program.");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Try again");
+                    break;
+            }
+        } while (choice != "l");
     }
 
     public static int sumPosInt(int[] arr) {
