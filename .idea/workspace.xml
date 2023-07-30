@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Fix bug for FindFirstPrimeNum()">
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Fix bug in function FindMinEvenInt()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi7/Baitapbuoi7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi7/Baitapbuoi7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi5/Baitapbuoi5_bai4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,7 +377,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690686526784</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Fix bug in function FindMinEvenInt()">
+      <option name="closed" value="true" />
+      <created>1690692274721</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1690692274721</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Fix bug in function FindMinEvenInt()">
+      <option name="closed" value="true" />
+      <created>1690692353778</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1690692353778</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -416,7 +431,8 @@
     <MESSAGE value="Fix return -1" />
     <MESSAGE value="Fix menu" />
     <MESSAGE value="Fix bug for FindFirstPrimeNum()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix bug for FindFirstPrimeNum()" />
+    <MESSAGE value="Fix bug in function FindMinEvenInt()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bug in function FindMinEvenInt()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
