@@ -37,8 +37,8 @@ public class Baitapbuoi7 {
         System.out.println("j. Find the last positive integer");
         System.out.println("k. Find the min even number");
         System.out.println("l. Exit");
-        String choice = "";
-        while (!choice.equals("l")) {
+        String choice;
+        do {
             System.out.print("Enter your choice: ");
             choice = scanner.nextLine();
             switch (choice) {
@@ -84,7 +84,7 @@ public class Baitapbuoi7 {
                     System.out.println("Invalid choice. Try again");
                     break;
             }
-        }
+        } while (!choice.equals("l"));
     }
 
     public static int sumPosInt(int[] arr) {
