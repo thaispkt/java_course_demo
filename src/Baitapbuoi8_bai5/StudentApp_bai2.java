@@ -1,4 +1,5 @@
 package Baitapbuoi8_bai5;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -10,7 +11,7 @@ import java.util.Scanner;
 • In ra SV có ĐTB cao nhất. In ra danh sách theo mẫu
 • In ra tất cả sinh viên Yếu. In ra danh sách theo mẫu
 • Tìm sinh viên theo tên. In ra danh sách theo mẫu
-• Tìm sinh viên theo mã
+• Tìm sinh viên theo mã. In ra danh sách theo mẫu
 • Xóa 1 sinh viên theo mã
  */
 public class StudentApp_bai2 {
@@ -29,13 +30,56 @@ public class StudentApp_bai2 {
 //        }
         System.out.println("Student Ranking:");
         System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
-        for (Student2 student: students) {
+        for (Student2 student : students) {
             student.calcScoreAverage();
             student.ranking();
             System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
         }
+//• In ra SV có ĐTB cao nhất. In ra danh sách theo mẫu
+        System.out.println("Student with the highest average score:");
+        double maxAverageScore = students[0].averageScore;
+        int maxAverageScoreIndex = 0;
+        for (int i = 1; i < students.length; i++) {
+            if (students[i].averageScore > maxAverageScore) {
+                maxAverageScore = students[i].averageScore;
+                maxAverageScoreIndex = i;
+            }
+        }
+        Student2 maxScoreStudent = students[maxAverageScoreIndex];
+
+        System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
+        System.out.printf("%-20s %-10s %-15.2f %s\n", maxScoreStudent.name, maxScoreStudent.id,
+                maxScoreStudent.averageScore, maxScoreStudent.rank);
+
+//• In ra tất cả sinh viên Yếu. In ra danh sách theo mẫu
+        System.out.println("List of students in weak rank");
+        for (Student2 student : students) {
+            if (student.rank.equals("Weak")) {
+                System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
+            }
+        }
+//• Tìm sinh viên theo tên. In ra danh sách theo mẫu
+        System.out.print("Enter the name of the student to search: ");
+        String studentNameSearch = scanner.nextLine();
+        System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
+        for (Student2 student : students) {
+            if (student.name.equals(studentNameSearch)) {
+                System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
+            }
+        }
+//• Tìm sinh viên theo mã. In ra danh sách theo mẫu
+        System.out.print("Enter the ID of the student to search: ");
+        String studentIDSearch = scanner.nextLine();
+        System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
+        for (Student2 student : students) {
+            if (student.id.equals(studentIDSearch)) {
+                System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
+            }
+        }
+//• Xóa 1 sinh viên theo mã
         scanner.close();
     }
+
     public static String generateRandomName() {
         Random random = new Random();
         String[] firstNames = {
@@ -43,26 +87,28 @@ public class StudentApp_bai2 {
                 "Hoàng", "Võ", "Bùi"
         };
         String[] middleNames = {
-                "Anh",  "Chí", "Duy", "Đức", "Hoàng", "Hương", "Khánh", "Linh", "Minh",
+                "Anh", "Chí", "Duy", "Đức", "Hoàng", "Hương", "Khánh", "Linh", "Minh",
                 "Ngọc", "Quốc", "Thanh", "Thảo", "Thi", "Trang", "Vân", "Việt", "Xuân", "Thị",
                 "Văn", "Hữu", "Quang", "Thịnh"
         };
         String[] lastNames = {
                 "Anh", "Bảo", "Bình", "Cường", "Đức", "Duy", "Hoàng", "Huy", "Minh", "Nam",
-                 "Tuấn", "Việt", "Châu", "Chi", "Diệp", "Hương", "Linh", "Mai", "Ngọc",
+                "Tuấn", "Việt", "Châu", "Chi", "Diệp", "Hương", "Linh", "Mai", "Ngọc",
                 "Phương", "Quỳnh", "Trang", "Vân", "Hưng", "Trung", "Minh", "Hà", "Thành", "Quang"
         };
 
-        String firstName = firstNames[random.nextInt(firstNames.length-1)];
-        String middleName = middleNames[random.nextInt(firstNames.length-1)];
-        String lastName = lastNames[random.nextInt(lastNames.length-1)];
-        return firstName + " " + middleName + " "+ lastName;
+        String firstName = firstNames[random.nextInt(firstNames.length - 1)];
+        String middleName = middleNames[random.nextInt(firstNames.length - 1)];
+        String lastName = lastNames[random.nextInt(lastNames.length - 1)];
+        return firstName + " " + middleName + " " + lastName;
     }
+
     public static String generateRandomStudentID() {
         Random random = new Random();
         int randomNum = random.nextInt(900000) + 100000; // Generate a 6-digit number (100,000 to 999,999)
         return String.valueOf(randomNum);
     }
+
     public static double generateRandomMark() {
         Random random = new Random();
         // Generate a random integer from 0 to 50
@@ -71,6 +117,7 @@ public class StudentApp_bai2 {
         double randomMark = randomNumber * 0.2;
         return randomMark;
     }
+
     public static void CreateDummyData(Student2[] students) {
         for (int i = 0; i < students.length; i++) {
             String name = generateRandomName();
