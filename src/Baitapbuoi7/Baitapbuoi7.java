@@ -37,22 +37,22 @@ public class Baitapbuoi7 {
         System.out.println("8. Find the last positive integer");
         System.out.println("9. Find the min even number");
         System.out.print("Choose the menu: ");
-        int option = scanner.nextInt();
+        String option = scanner.nextLine();
         int result;
         switch (option) {
-            case 0:
+            case "b": // b. Tổng các số dương
                 System.out.println("Sum of positive integers: " + sumPosInt(arr));
                 break;
-            case 1:
+            case "c": // c. Tính tổng các số lẻ.
                 System.out.println("Sum of odd integers: " + sumOddInt(arr));
                 break;
-            case 2:
+            case "d": // d. Đếm có bao nhiêu số dương.
                 System.out.println("Count of positive integers: " + countPosInt(arr));
                 break;
-            case 3:
+            case "e": // e. Tìm số nhỏ nhất trong mảng.
                 System.out.println("Minimum integer: " + FindMinInt(arr));
                 break;
-            case 4:
+            case "f": // f. Tìm số dương nhỏ nhất trong mảng
                 result = FindMinPosInt(arr);
                 if (result == 0) {
                     System.out.println("No positive integer found in the list");
@@ -60,20 +60,20 @@ public class Baitapbuoi7 {
                     System.out.println("Minimum positive integer: " + result);
                 }
                 break;
-            case 5:
+            case "g": // g. Tìm số chẵn cuối cùng trong mảng 1 chiều các số nguyên
                 System.out.println("Last even integer: " + FindLastEvenInt(arr));
                 break;
-            case 6:
+            case "h": // h. Viết hàm tìm số chẵn đầu tiên trong mảng các số nguyên
                 System.out.println("First even integer: " + FindFirstEvenInt(arr));
                 break;
-            case 7:
+            case "i": // Tìm số nguyên tố đầu tiên trong mảng 1 chiều các số nguyên.
                 result = FindFirstPrimeNum(arr);
                 System.out.println("First prime number: " + FindFirstPrimeNum(arr));
                 break;
-            case 8:
+            case "j": // j. Tìm số dương cuối cùng trong mảng số nguyên.
                 System.out.println("Last positive integer: " + FindLastPosInt(arr));
                 break;
-            case 9:
+            case "k": // k. Hãy tìm giá trị chẵn nhỏ nhất trong mảng 1 chiều các số nguyên.
                 System.out.println("Min even number: " + FindMinEvenInt(arr));
                 break;
             default:
