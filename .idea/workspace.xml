@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Fix menu">
-      <change afterPath="$PROJECT_DIR$/src/Notes.java" afterDir="false" />
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Fix bug for FindFirstPrimeNum()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi7/Baitapbuoi7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi7/Baitapbuoi7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi7/Baitapbuoi7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi7/Baitapbuoi7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/bcjava03_demo/Baitapbuoi7/Baitapbuoi7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi7/Baitapbuoi7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi7.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,7 +370,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690683002211</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Fix bug for FindFirstPrimeNum()">
+      <option name="closed" value="true" />
+      <created>1690686526784</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1690686526784</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -408,7 +415,8 @@
     <MESSAGE value="Remove comment for ex7" />
     <MESSAGE value="Fix return -1" />
     <MESSAGE value="Fix menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix menu" />
+    <MESSAGE value="Fix bug for FindFirstPrimeNum()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bug for FindFirstPrimeNum()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -424,13 +432,22 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Baitapbuoi7/Baitapbuoi7.java</url>
-          <line>161</line>
-          <properties class="Baitapbuoi7.Baitapbuoi7" method="FindFirstPrimeNum">
+          <url>file://$PROJECT_DIR$/src/Baitapbuoi7.java</url>
+          <line>159</line>
+          <properties class="Baitapbuoi7" method="FindFirstPrimeNum">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Baitapbuoi7.java</url>
+          <line>195</line>
+          <properties class="Baitapbuoi7" method="FindMinEvenInt">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

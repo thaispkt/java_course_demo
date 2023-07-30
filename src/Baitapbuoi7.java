@@ -1,5 +1,3 @@
-package Baitapbuoi7;
-
 import java.util.Scanner;
 
 /* Cho người dùng nhập vào n số nguyên và lưu trữ trong mảng
@@ -140,7 +138,7 @@ public class Baitapbuoi7 {
 
     public static int FindLastEvenInt(int[] arr) {
         int lastEvenInt = -1;
-        for (int num: arr) {
+        for (int num : arr) {
             if (num % 2 == 0) {
                 lastEvenInt = num;
             }
@@ -150,7 +148,7 @@ public class Baitapbuoi7 {
 
     public static int FindFirstEvenInt(int[] arr) {
         int firstEvenInt = -1;
-        for (int num:arr) {
+        for (int num : arr) {
             if (num % 2 == 0) {
                 firstEvenInt = num;
                 break;
@@ -161,16 +159,22 @@ public class Baitapbuoi7 {
 
     public static int FindFirstPrimeNum(int[] arr) {
         int primeNum = -1;
-        for (int divisor:arr) {
-            if(divisor > 1) {
+        for (int divisor : arr) {
+            if (divisor > 1) {
                 boolean isPrimeNumDetected = true;
-                for (int dividend = 2; dividend < divisor; dividend++) {
-                    if (divisor % dividend == 0) {
-                        isPrimeNumDetected = false;
-                        break;
+                if (divisor == 2) {
+                    primeNum = 2;
+                    break;
+                } else {
+                    for (int dividend = 2; dividend < divisor; dividend++) {
+                        if (divisor % dividend == 0) {
+                            isPrimeNumDetected = false;
+                            break;
+                        }
+                        primeNum = divisor;
                     }
-                    primeNum = divisor;
                 }
+
                 if (isPrimeNumDetected) {
                     break;
                 }
@@ -178,6 +182,7 @@ public class Baitapbuoi7 {
         }
         return primeNum;
     }
+
     public static int FindLastPosInt(int[] arr) {
         int num = -1;
         for (int i = 0; i < arr.length; i++) {
@@ -187,11 +192,12 @@ public class Baitapbuoi7 {
         }
         return num;
     }
+
     public static int FindMinEvenInt(int[] arr) {
         int min = -1;
-        for (int num: arr) {
+        for (int num : arr) {
             if (num % 2 == 0) {
-                if (num < min) {
+                if ((min == -1) || (num < min)) {
                     min = num;
                 }
             }
