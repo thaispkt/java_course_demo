@@ -47,7 +47,7 @@ public class StudentApp_bai2 {
         }
         Student2 maxScoreStudent = students[maxAverageScoreIndex];
 
-        System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
+        System.out.printf("%-20s %-10s %-15s %s\n", "Name", "ID", "Average Score", "Rank");
         System.out.printf("%-20s %-10s %-15.2f %s\n", maxScoreStudent.name, maxScoreStudent.id,
                 maxScoreStudent.averageScore, maxScoreStudent.rank);
 
