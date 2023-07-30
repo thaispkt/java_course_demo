@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Change while to do...while()">
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp.java" afterDir="false" />
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Remove directory out/production">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -426,7 +426,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690698146570</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Remove directory out/production">
+      <option name="closed" value="true" />
+      <created>1690709592848</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1690709592848</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,7 +452,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="First commit" />
     <MESSAGE value="Bai tap buoi 3" />
     <MESSAGE value="Bai tap buoi 6" />
     <MESSAGE value="Bai tap buoi 5" />
@@ -469,7 +476,8 @@
     <MESSAGE value="Add message &quot;Try again&quot; in default case" />
     <MESSAGE value="Add &quot;Menu: &quot; message" />
     <MESSAGE value="Change while to do...while()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change while to do...while()" />
+    <MESSAGE value="Remove directory out/production" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove directory out/production" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
