@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Change %n to \n">
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/TestRandom2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TestRandom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Add menu, fix String firstName = firstNames[random.nextInt(firstNames.length)];">
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/Student1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/Student2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp_bai1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp_bai1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp_bai2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp_bai2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,14 +58,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689675360432</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Bai tap buoi 6">
-      <option name="closed" value="true" />
-      <created>1689857656929</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1689857656929</updated>
     </task>
     <task id="LOCAL-00005" summary="Bai tap buoi 6">
       <option name="closed" value="true" />
@@ -451,7 +443,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690736454189</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Add menu, fix String firstName = firstNames[random.nextInt(firstNames.length)];">
+      <option name="closed" value="true" />
+      <created>1690766356638</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1690766356638</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -469,7 +469,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Bai tap buoi 4-5" />
     <MESSAGE value="Git pull before code" />
     <MESSAGE value="Change array to global variable" />
     <MESSAGE value="Bai tap buoi 8 - bai 2" />
@@ -494,7 +493,8 @@
     <MESSAGE value="Complete execise Baitapbuoi8_bai5:&#10;• In ra SV có ĐTB cao nhất. In ra danh sách theo mẫu&#10;• In ra tất cả sinh viên Yếu. In ra danh sách theo mẫu&#10;• Tìm sinh viên theo tên. In ra danh sách theo mẫu&#10;• Tìm sinh viên theo mã. In ra danh sách theo mẫu" />
     <MESSAGE value="Remove duplicate name in middle name and last name" />
     <MESSAGE value="Change %n to \n" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change %n to \n" />
+    <MESSAGE value="Add menu, fix String firstName = firstNames[random.nextInt(firstNames.length)];" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add menu, fix String firstName = firstNames[random.nextInt(firstNames.length)];" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

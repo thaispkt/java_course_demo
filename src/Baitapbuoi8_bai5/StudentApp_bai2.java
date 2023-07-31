@@ -20,7 +20,7 @@ public class StudentApp_bai2 {
         System.out.print("Enter number of students: ");
         int N = scanner.nextInt();
         scanner.nextLine(); // Consume the left new line character in buffer
-        Student2[] students = new Student2[N];
+        Student[] students = new Student[N];
         CreateDummyData(students);
 //        System.out.printf("%-20s %-10s %-15s %-15s %-15s\n", "Name", "ID", "Math mark", "Physic mark", "Chemistry " +
 //                "mark");
@@ -31,7 +31,7 @@ public class StudentApp_bai2 {
 
         System.out.println("Student Ranking:");
         System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
-        for (Student2 student : students) {
+        for (Student student : students) {
             student.calcScoreAverage();
             student.ranking();
             System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
@@ -60,7 +60,7 @@ public class StudentApp_bai2 {
                             maxAverageScoreIndex = i;
                         }
                     }
-                    Student2 maxScoreStudent = students[maxAverageScoreIndex];
+                    Student maxScoreStudent = students[maxAverageScoreIndex];
 
                     System.out.printf("%-20s %-10s %-15s %s\n", "Name", "ID", "Average Score", "Rank");
                     System.out.printf("%-20s %-10s %-15.2f %s\n", maxScoreStudent.name, maxScoreStudent.id,
@@ -70,7 +70,7 @@ public class StudentApp_bai2 {
                 case 2:
                     // In ra tất cả sinh viên Yếu. In ra danh sách theo mẫu
                     System.out.println("List of students in weak rank");
-                    for (Student2 student : students) {
+                    for (Student student : students) {
                         if (student.rank.equals("Weak")) {
                             System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
                         }
@@ -81,7 +81,7 @@ public class StudentApp_bai2 {
                     System.out.print("Enter the name of the student to search: ");
                     String studentNameSearch = scanner.nextLine();
                     System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
-                    for (Student2 student : students) {
+                    for (Student student : students) {
                         if (student.name.equals(studentNameSearch)) {
                             System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
                         }
@@ -92,7 +92,7 @@ public class StudentApp_bai2 {
                     System.out.print("Enter the ID of the student to search: ");
                     String studentIDSearch = scanner.nextLine();
                     System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
-                    for (Student2 student : students) {
+                    for (Student student : students) {
                         if (student.id.equals(studentIDSearch)) {
                             System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
                         }
@@ -150,14 +150,14 @@ public class StudentApp_bai2 {
         return randomMark;
     }
 
-    public static void CreateDummyData(Student2[] students) {
+    public static void CreateDummyData(Student[] students) {
         for (int i = 0; i < students.length; i++) {
             String name = generateRandomName();
             String studentID = generateRandomStudentID();
             double mathScore = generateRandomMark();
             double physicsScore = generateRandomMark();
             double chemistryScore = generateRandomMark();
-            students[i] = new Student2(name, studentID, mathScore, physicsScore, chemistryScore);
+            students[i] = new Student(name, studentID, mathScore, physicsScore, chemistryScore);
         }
     }
 }

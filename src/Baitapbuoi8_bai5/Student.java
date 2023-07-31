@@ -1,17 +1,20 @@
 package Baitapbuoi8_bai5;
-/*
-1)	Xây dựng chương trình cho phép người dùng nhập vào: Tên, Mã SV, điểm Toán, Lý Hóa. Thực hiện các nghiệp vụ dưới đây.
-•	Tính điểm trung bình từng sinh viên ( T + L + H)/3
-•	Xếp loại từng sinh viên theo: >=9 -> Xuất Sắc, 9<Giỏi<=8, 8<Khá<=7, <7<=6, <=5, còn lại Yếu.
- */
-public class Student1 {
+
+public class Student {
     String name;
     String id;
-    float mathMark;
-    float physicsMark;
-    float chemistryMark;
-    float averageScore;
+    double mathMark;
+    double physicsMark;
+    double chemistryMark;
+    double averageScore;
     String rank;
+    public Student(String name, String id, double mathMark, double physicsMark, double chemistryMark) {
+        this.name = name;
+        this.id = id;
+        this.mathMark = mathMark;
+        this.physicsMark = physicsMark;
+        this.chemistryMark = chemistryMark;
+    }
     public void calcScoreAverage() {
         this.averageScore = (this.mathMark + this.physicsMark + this.chemistryMark)/3;
     }
