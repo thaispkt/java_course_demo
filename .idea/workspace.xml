@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Remove duplicate name in middle name and last name">
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Change %n to \n">
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/TestRandom2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestRandom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp_bai2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp_bai2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,14 +58,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689675360432</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Bai tap buoi 3">
-      <option name="closed" value="true" />
-      <created>1689856420710</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1689856420710</updated>
     </task>
     <task id="LOCAL-00004" summary="Bai tap buoi 6">
       <option name="closed" value="true" />
@@ -448,7 +443,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690735827456</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Change %n to \n">
+      <option name="closed" value="true" />
+      <created>1690736454189</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1690736454189</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -466,7 +469,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Fix space x = %.2f" />
     <MESSAGE value="Bai tap buoi 4-5" />
     <MESSAGE value="Git pull before code" />
     <MESSAGE value="Change array to global variable" />
@@ -491,7 +493,8 @@
     <MESSAGE value="Implement generate dummy info data for students in execise Baitapbuoi8_bai5" />
     <MESSAGE value="Complete execise Baitapbuoi8_bai5:&#10;• In ra SV có ĐTB cao nhất. In ra danh sách theo mẫu&#10;• In ra tất cả sinh viên Yếu. In ra danh sách theo mẫu&#10;• Tìm sinh viên theo tên. In ra danh sách theo mẫu&#10;• Tìm sinh viên theo mã. In ra danh sách theo mẫu" />
     <MESSAGE value="Remove duplicate name in middle name and last name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove duplicate name in middle name and last name" />
+    <MESSAGE value="Change %n to \n" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change %n to \n" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

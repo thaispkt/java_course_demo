@@ -28,6 +28,7 @@ public class StudentApp_bai2 {
 //            System.out.printf("%-20s %-10s %-15.2f %-15.2f %-15.2f\n", student.name, student.id, student.mathMark,
 //                    student.physicsMark, student.chemistryMark);
 //        }
+
         System.out.println("Student Ranking:");
         System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
         for (Student2 student : students) {
@@ -36,47 +37,78 @@ public class StudentApp_bai2 {
             System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
         }
 //• In ra SV có ĐTB cao nhất. In ra danh sách theo mẫu
-        System.out.println("Student with the highest average score:");
-        double maxAverageScore = students[0].averageScore;
-        int maxAverageScoreIndex = 0;
-        for (int i = 1; i < students.length; i++) {
-            if (students[i].averageScore > maxAverageScore) {
-                maxAverageScore = students[i].averageScore;
-                maxAverageScoreIndex = i;
-            }
-        }
-        Student2 maxScoreStudent = students[maxAverageScoreIndex];
+        System.out.println("Menu: ");
+        System.out.println("1. Student with the highest average score");
+        System.out.println("2. List of students in weak rank");
+        System.out.println("3. Enter the name of the student to search");
+        System.out.println("4. Enter the ID of the student to search");
+        System.out.println("5. Enter the ID of the student to delete");
+        System.out.println("0. Exit");
+        int choice;
+        do {
+            System.out.print("Enter choice: ");
+            choice = scanner.nextInt();
+            scanner.nextLine();
+            switch (choice) {
+                case 1:
+                    System.out.println("Student with the highest average score:");
+                    double maxAverageScore = students[0].averageScore;
+                    int maxAverageScoreIndex = 0;
+                    for (int i = 1; i < students.length; i++) {
+                        if (students[i].averageScore > maxAverageScore) {
+                            maxAverageScore = students[i].averageScore;
+                            maxAverageScoreIndex = i;
+                        }
+                    }
+                    Student2 maxScoreStudent = students[maxAverageScoreIndex];
 
-        System.out.printf("%-20s %-10s %-15s %s\n", "Name", "ID", "Average Score", "Rank");
-        System.out.printf("%-20s %-10s %-15.2f %s\n", maxScoreStudent.name, maxScoreStudent.id,
-                maxScoreStudent.averageScore, maxScoreStudent.rank);
+                    System.out.printf("%-20s %-10s %-15s %s\n", "Name", "ID", "Average Score", "Rank");
+                    System.out.printf("%-20s %-10s %-15.2f %s\n", maxScoreStudent.name, maxScoreStudent.id,
+                            maxScoreStudent.averageScore, maxScoreStudent.rank);
 
-//• In ra tất cả sinh viên Yếu. In ra danh sách theo mẫu
-        System.out.println("List of students in weak rank");
-        for (Student2 student : students) {
-            if (student.rank.equals("Weak")) {
-                System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
+                    break;
+                case 2:
+                    // In ra tất cả sinh viên Yếu. In ra danh sách theo mẫu
+                    System.out.println("List of students in weak rank");
+                    for (Student2 student : students) {
+                        if (student.rank.equals("Weak")) {
+                            System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
+                        }
+                    }
+                    break;
+                case 3:
+                    // Tìm sinh viên theo tên. In ra danh sách theo mẫu
+                    System.out.print("Enter the name of the student to search: ");
+                    String studentNameSearch = scanner.nextLine();
+                    System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
+                    for (Student2 student : students) {
+                        if (student.name.equals(studentNameSearch)) {
+                            System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
+                        }
+                    }
+                    break;
+                case 4:
+                // Tìm sinh viên theo mã. In ra danh sách theo mẫu
+                    System.out.print("Enter the ID of the student to search: ");
+                    String studentIDSearch = scanner.nextLine();
+                    System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
+                    for (Student2 student : students) {
+                        if (student.id.equals(studentIDSearch)) {
+                            System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
+                        }
+                    }
+                    break;
+                case 5:
+                    // Xóa 1 sinh viên theo mã
+                    break;
+                case 0:
+                    System.out.println("Exiting program");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Try again:");
+                    break;
             }
-        }
-//• Tìm sinh viên theo tên. In ra danh sách theo mẫu
-        System.out.print("Enter the name of the student to search: ");
-        String studentNameSearch = scanner.nextLine();
-        System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
-        for (Student2 student : students) {
-            if (student.name.equals(studentNameSearch)) {
-                System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
-            }
-        }
-//• Tìm sinh viên theo mã. In ra danh sách theo mẫu
-        System.out.print("Enter the ID of the student to search: ");
-        String studentIDSearch = scanner.nextLine();
-        System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
-        for (Student2 student : students) {
-            if (student.id.equals(studentIDSearch)) {
-                System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
-            }
-        }
-//• Xóa 1 sinh viên theo mã
+        } while (choice != 0);
         scanner.close();
     }
 
@@ -88,7 +120,7 @@ public class StudentApp_bai2 {
         };
         String[] middleNames = {
                 "Anh", "Chí", "Duy", "Hoàng", "Hương", "Khánh", "Minh",
-                "Ngọc", "Quốc", "Thanh", "Thảo", "Thi", "Trang", "Vân", "Việt", "Xuân", "Thị",
+                "Ngọc", "Quốc", "Thanh", "Thảo", "Trang", "Vân", "Việt", "Xuân", "Thị",
                 "Văn", "Hữu", "Quang", "Thịnh"
         };
         String[] lastNames = {
@@ -97,9 +129,9 @@ public class StudentApp_bai2 {
                 "Phương", "Quỳnh", "Trang", "Vân", "Hưng", "Trung", "Minh", "Hà", "Thành", "Quang"
         };
 
-        String firstName = firstNames[random.nextInt(firstNames.length - 1)];
-        String middleName = middleNames[random.nextInt(firstNames.length - 1)];
-        String lastName = lastNames[random.nextInt(lastNames.length - 1)];
+        String firstName = firstNames[random.nextInt(firstNames.length)];
+        String middleName = middleNames[random.nextInt(firstNames.length)];
+        String lastName = lastNames[random.nextInt(lastNames.length)];
         return firstName + " " + middleName + " " + lastName;
     }
 
