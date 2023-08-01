@@ -36,6 +36,7 @@ public class StudentApp_bai2 {
             student.ranking();
             System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
         }
+
 //• In ra SV có ĐTB cao nhất. In ra danh sách theo mẫu
         System.out.println("Menu: ");
         System.out.println("1. Student with the highest average score");
@@ -45,6 +46,7 @@ public class StudentApp_bai2 {
         System.out.println("5. Enter the ID of the student to delete");
         System.out.println("0. Exit");
         int choice;
+        String studentIDSearch;
         do {
             System.out.print("Enter choice: ");
             choice = scanner.nextInt();
@@ -72,7 +74,8 @@ public class StudentApp_bai2 {
                     System.out.println("List of students in weak rank");
                     for (Student student : students) {
                         if (student.rank.equals("Weak")) {
-                            System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
+                            System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore,
+                                    student.rank);
                         }
                     }
                     break;
@@ -83,23 +86,60 @@ public class StudentApp_bai2 {
                     System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
                     for (Student student : students) {
                         if (student.name.equals(studentNameSearch)) {
-                            System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
+                            System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore,
+                                    student.rank);
                         }
                     }
                     break;
                 case 4:
                 // Tìm sinh viên theo mã. In ra danh sách theo mẫu
                     System.out.print("Enter the ID of the student to search: ");
-                    String studentIDSearch = scanner.nextLine();
+                    studentIDSearch = scanner.nextLine();
                     System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
                     for (Student student : students) {
                         if (student.id.equals(studentIDSearch)) {
-                            System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore, student.rank);
+                            System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id,
+                                    student.averageScore, student.rank);
                         }
                     }
                     break;
                 case 5:
                     // Xóa 1 sinh viên theo mã
+                    int studentRemovedIndex = -1;
+                    System.out.print("Enter the ID of the student to delete: ");
+                    studentIDSearch = scanner.nextLine();
+                    for (int i = 0; i < students.length; i++) {
+                        if (students[i].id.equals(studentIDSearch)) {
+                            studentRemovedIndex = i;
+                            break;
+                        }
+                    }
+                    if (studentRemovedIndex == -1)
+                    {
+                        System.out.println("Cound not found the student in the list");
+                        break;
+                    }
+                    // Shift the elements after the target index one position to the left
+                    for (int i = studentRemovedIndex; i < students.length - 1; i++) {
+                        students[i] = students[i + 1];
+                    }
+                    students[students.length - 1] = null;
+//                    // Create a new student array
+//                    Student[] updatedStudents = new Student[students.length - 1];
+//                    int j = 0;
+//                    for (int i = 0; i < students.length; i++) {
+//                        if (i != studentRemovedIndex) {
+//                            updatedStudents[j] = students[i];
+//                            j++;
+//                        }
+//                    }
+                    System.out.println("Updated student list:");
+                    System.out.printf("%-20s %-10s %-15s %s%n", "Name", "ID", "Average Score", "Rank");
+                    for (int i = 0; i < students.length-1; i++) {
+                        Student student = students[i];
+                        System.out.printf("%-20s %-10s %-15.2f %s\n", student.name, student.id, student.averageScore,
+                                student.rank);
+                    }
                     break;
                 case 0:
                     System.out.println("Exiting program");
