@@ -37,8 +37,8 @@ public class StudentApp_bai2 {
         System.out.println("2. Student with the top average score");
         System.out.println("3. List of students in weak rank");
         System.out.println("4. Enter the name of the student to search");
-        System.out.println("5. Enter the ID of the student to search");
-        System.out.println("6. Enter the ID of the student to delete");
+        System.out.println("5. Enter the student ID to search");
+        System.out.println("6. Enter the student ID to delete");
         System.out.println("0. Exit");
         int choice;
         String studentIDSearch;

@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Delete student based on ID">
-      <change afterPath="$PROJECT_DIR$/src/ArrayListDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi5/DeleteEelementInArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi5/DeleteElemInArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi5/DeleteElementInArray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp_bai2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp_bai2.java" afterDir="false" />
-    </list>
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Convert array to ArrayList to manage student list" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,14 +53,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689675360432</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Optimze execise Baitapbuoi5_bai8">
-      <option name="closed" value="true" />
-      <created>1690130438860</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1690130438860</updated>
     </task>
     <task id="LOCAL-00009" summary="Optimze execise Baitapbuoi5_bai8">
       <option name="closed" value="true" />
@@ -454,7 +438,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690854585844</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Convert array to ArrayList to manage student list">
+      <option name="closed" value="true" />
+      <created>1690882081154</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1690882081155</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -472,7 +464,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Bai tap buoi 8 - bai 2" />
     <MESSAGE value="Fixing enterInfo() method" />
     <MESSAGE value="Submit bai 1 -&gt; bai 7" />
     <MESSAGE value="Check case &quot;No male officer found in the above list&quot; in bai7" />
@@ -497,7 +488,8 @@
     <MESSAGE value="Add menu, fix String firstName = firstNames[random.nextInt(firstNames.length)];" />
     <MESSAGE value="Delete class Sinhvien1" />
     <MESSAGE value="Delete student based on ID" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete student based on ID" />
+    <MESSAGE value="Convert array to ArrayList to manage student list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Convert array to ArrayList to manage student list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
