@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Revise the menu">
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi9_bai1/SinhVienPrivate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi9_bai1/SinhVienProtected.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi9_bai2/GiangVien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi9_bai2/HieuTruong.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi9_bai2/ManagerApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi9_bai2/SinhVien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demoNgoaiPackage/DemoNgoaiPackageApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class_UML.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/Class_UML.drawio" afterDir="false" />
-    </list>
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Delete student based on ID" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +53,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689675360432</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Optimze execise Baitapbuoi5_bai8">
+      <option name="closed" value="true" />
+      <created>1690130438860</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690130438860</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Optimze execise Baitapbuoi5_bai8">
+      <option name="closed" value="true" />
+      <created>1690130546673</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690130546673</updated>
     </task>
     <task id="LOCAL-00010" summary="Optimze execise Baitapbuoi5_bai8">
       <option name="closed" value="true" />
@@ -440,23 +446,7 @@
       <option name="project" value="LOCAL" />
       <updated>1690854585844</updated>
     </task>
-    <task id="LOCAL-00057" summary="Convert array to ArrayList to manage student list">
-      <option name="closed" value="true" />
-      <created>1690882081154</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1690882081155</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Revise the menu">
-      <option name="closed" value="true" />
-      <created>1690882397018</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1690882397018</updated>
-    </task>
-    <option name="localTasksCounter" value="59" />
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -474,6 +464,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="Bai tap buoi 8 - bai 2" />
+    <MESSAGE value="Fixing enterInfo() method" />
     <MESSAGE value="Submit bai 1 -&gt; bai 7" />
     <MESSAGE value="Check case &quot;No male officer found in the above list&quot; in bai7" />
     <MESSAGE value="Submit exercise 8" />
@@ -497,9 +489,7 @@
     <MESSAGE value="Add menu, fix String firstName = firstNames[random.nextInt(firstNames.length)];" />
     <MESSAGE value="Delete class Sinhvien1" />
     <MESSAGE value="Delete student based on ID" />
-    <MESSAGE value="Convert array to ArrayList to manage student list" />
-    <MESSAGE value="Revise the menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revise the menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete student based on ID" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
