@@ -77,7 +77,8 @@ public class Account {
         if (totalWithdrawAmount <= this.amount) {
             this.amount -= totalWithdrawAmount;
         } else {
-            System.out.println("Withdrawal amount must be greater than the sum of the amount and withdrawal fee");
+            System.out.println("Error: Withdrawal amount must be greater than the sum of the amount and withdrawal " +
+                    "fee");
         }
     }
 
@@ -94,7 +95,7 @@ public class Account {
             this.amount -= transferAmount;
             destinationAccount.deposit(transferAmount);
         } else {
-            System.out.println("Invalid transfer amount or insufficient balance.");
+            System.out.println("Error: insufficient balance.");
         }
     }
 
