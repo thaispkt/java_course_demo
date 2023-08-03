@@ -1,14 +1,16 @@
 package Baitapbuoi9_bai2;
 
+import Baitapbuoi10_bai2.GiangVien;
+
 public class HieuTruong extends GiangVien {
     GiangVien[] danhSachGiangVien;
 
-    public HieuTruong() {
-    }
+//    public HieuTruong() {
+//    }
 
     public HieuTruong(String hoTen, int tuoi, String gioiTinh, String monDay) {
         super(hoTen, tuoi, gioiTinh); // <=> SinhVien()
-        this.monDay = monDay;
+//        this.monDay = monDay;
     }
 
     public HieuTruong(String hoten, int tuoi, String gioiTinh,
