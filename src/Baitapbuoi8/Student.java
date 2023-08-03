@@ -75,7 +75,7 @@ class Student {
         this.practiceScore = practiceScore;
     }
 
-    public float calculateAverageScore() {
+    public float calcAverageScore() {
         return (theoryScore + practiceScore) / 2;
     }
 

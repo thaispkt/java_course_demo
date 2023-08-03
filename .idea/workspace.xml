@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Submit Baitapbuoi8_bai1">
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8/Baitapbuoi8_bai3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8/Baitapbuoi8_bai1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8/Baitapbuoi8_bai1.java" afterDir="false" />
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Submit Baitapbuoi8_bai3">
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8/Baitapbuoi8_bai4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8/Baitapbuoi8_bai3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8/Baitapbuoi8_bai3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,14 +58,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689675360432</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Optimze execise Baitapbuoi5_bai8">
-      <option name="closed" value="true" />
-      <created>1690130730480</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1690130730480</updated>
     </task>
     <task id="LOCAL-00012" summary="Fix space x = %.2f">
       <option name="closed" value="true" />
@@ -450,7 +443,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691052936235</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Submit Baitapbuoi8_bai3">
+      <option name="closed" value="true" />
+      <created>1691054501932</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1691054501932</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -468,7 +469,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Check case &quot;No male officer found in the above list&quot; in bai7" />
     <MESSAGE value="Submit exercise 8" />
     <MESSAGE value="Add scanner.close()" />
     <MESSAGE value="Submit exercise 7" />
@@ -493,7 +493,8 @@
     <MESSAGE value="Convert array to ArrayList to manage student list" />
     <MESSAGE value="Revise the menu" />
     <MESSAGE value="Submit Baitapbuoi8_bai1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Submit Baitapbuoi8_bai1" />
+    <MESSAGE value="Submit Baitapbuoi8_bai3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Submit Baitapbuoi8_bai3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

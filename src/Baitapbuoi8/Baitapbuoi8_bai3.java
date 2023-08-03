@@ -24,18 +24,10 @@ import java.util.Scanner;
 
 public class Baitapbuoi8_bai3 {
     public static void main(String[] args) {
-        // Create object sv1 with its own information
         Student sv1 = new Student(753159, "Nguyễn Thanh An", 7, 6);
-
-        // Create object sv2 with my best friend's information
         Student sv2 = new Student(381729, "Lê Thành Đạt", 9, 8);
-
-        // Create object sv3 with default constructor
         Student sv3 = new Student();
-
-        // Input information for sv3 from the keyboard
         Scanner scanner = new Scanner(System.in);
-
         System.out.print("Enter student ID for sv3: ");
         int id = scanner.nextInt();
         scanner.nextLine();
@@ -57,15 +49,15 @@ public class Baitapbuoi8_bai3 {
 
         System.out.println("sv1 info:");
         System.out.println(sv1.toString());
-        System.out.println("Average score: " + sv1.calculateAverageScore());
+        System.out.println("Average score: " + sv1.calcAverageScore());
 
         System.out.println("sv2 info:");
         System.out.println(sv2.toString());
-        System.out.println("Average score: " + sv2.calculateAverageScore());
+        System.out.println("Average score: " + sv2.calcAverageScore());
 
         System.out.println("sv3 info:");
         System.out.println(sv3.toString());
-        System.out.println("Average score: " + sv3.calculateAverageScore());
+        System.out.println("Average score: " + sv3.calcAverageScore());
 
         scanner.close();
     }
