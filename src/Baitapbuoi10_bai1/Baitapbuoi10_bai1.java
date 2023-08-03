@@ -15,8 +15,12 @@ mẫu số: denominator
  */
 public class Baitapbuoi10_bai1 {
     public static void main(String[] args) {
-        Fraction fraction1 = new Fraction(2, 3);
-        Fraction fraction2 = new Fraction(1, 4);
+//        Fraction fraction1 = new Fraction(2, 3);
+//        Fraction fraction2 = new Fraction(1, 4);
+        Fraction fraction1 = new Fraction();
+        fraction1.importData(1);
+        Fraction fraction2 = new Fraction();
+        fraction2.importData(2);
         Fraction fractionSum  = fraction1.add(fraction2);
         Fraction fractionDiff = fraction1.subtract(fraction2);
         Fraction fractionMul  = fraction1.multiply(fraction2);

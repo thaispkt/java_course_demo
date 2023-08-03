@@ -1,4 +1,7 @@
 package Baitapbuoi10_bai1;
+
+import java.util.Scanner;
+
 /*
 Xây dựng lớp Phanso gồm:
 •	Thuộc Tính: tuso, mauso.
@@ -12,8 +15,8 @@ Tử số: numerator
 mẫu số: denominator
  */
 public class Fraction {
-    int numerator;
-    int denominator;
+    private int numerator;
+    private int denominator;
     public Fraction() {
         numerator = 0;
         denominator = 1;
@@ -22,7 +25,14 @@ public class Fraction {
         this.numerator=numerator;
         this.denominator=denominator;
     }
-
+    public void importData(int i) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter numerator of fraction " + i + ": " );
+        this.numerator = scanner.nextInt();
+        System.out.print("Enter denominator of fraction " + i + ": ");
+        this.denominator = scanner.nextInt();
+        scanner.close();
+    }
     public String toString() {
         return(this.numerator +"/"+this.denominator);
     }

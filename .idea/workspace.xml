@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Remove @Override">
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Code alignment">
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Athlete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Baitapbuoi10_bai2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Baitapbuoi10_bai1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Baitapbuoi10_bai1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Fraction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,22 +64,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689675360432</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Bai tap buoi 4-5">
-      <option name="closed" value="true" />
-      <created>1690289663963</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1690289663963</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Bai tap buoi 4-5">
-      <option name="closed" value="true" />
-      <created>1690290595637</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1690290595637</updated>
     </task>
     <task id="LOCAL-00016" summary="Bai tap buoi 4-5">
       <option name="closed" value="true" />
@@ -453,7 +441,23 @@
       <option name="project" value="LOCAL" />
       <updated>1691068760901</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Remove @Override">
+      <option name="closed" value="true" />
+      <created>1691069211386</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1691069211386</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Code alignment">
+      <option name="closed" value="true" />
+      <created>1691069293093</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1691069293094</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -471,7 +475,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Submit exercise 7" />
     <MESSAGE value="Remove comment for ex7" />
     <MESSAGE value="Fix return -1" />
     <MESSAGE value="Fix menu" />
@@ -496,7 +499,8 @@
     <MESSAGE value="Submit Baitapbuoi8_bai3" />
     <MESSAGE value="Submit Baitapbuoi10_bai1" />
     <MESSAGE value="Remove @Override" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove @Override" />
+    <MESSAGE value="Code alignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code alignment" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
