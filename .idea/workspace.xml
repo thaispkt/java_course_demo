@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Code alignment">
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Athlete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Baitapbuoi10_bai2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Baitapbuoi10_bai1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Baitapbuoi10_bai1.java" afterDir="false" />
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Input scanner">
       <change beforePath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Fraction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,14 +60,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689675360432</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Bai tap buoi 4-5">
-      <option name="closed" value="true" />
-      <created>1690292665687</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1690292665687</updated>
     </task>
     <task id="LOCAL-00017" summary="Bai tap buoi 4-5">
       <option name="closed" value="true" />
@@ -457,7 +445,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691069293094</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Input scanner">
+      <option name="closed" value="true" />
+      <created>1691071616332</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1691071616332</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -475,7 +471,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Remove comment for ex7" />
     <MESSAGE value="Fix return -1" />
     <MESSAGE value="Fix menu" />
     <MESSAGE value="Fix bug for FindFirstPrimeNum()" />
@@ -500,7 +495,8 @@
     <MESSAGE value="Submit Baitapbuoi10_bai1" />
     <MESSAGE value="Remove @Override" />
     <MESSAGE value="Code alignment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code alignment" />
+    <MESSAGE value="Input scanner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Input scanner" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
