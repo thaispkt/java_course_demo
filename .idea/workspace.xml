@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Submit Baitapbuoi8_bai3">
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Baitapbuoi10_bai1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Fraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai2/GiangVien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai2/ManagerApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai2/SinhVien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi9_bai2/HieuTruong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi9_bai2/HieuTruong.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demoNgoaiPackage/DemoNgoaiPackageApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demoNgoaiPackage/DemoNgoaiPackageApplication.java" afterDir="false" />
-    </list>
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Submit Baitapbuoi10_bai1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,14 +58,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689675360432</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Fix space x = %.2f">
-      <option name="closed" value="true" />
-      <created>1690130820562</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1690130820562</updated>
     </task>
     <task id="LOCAL-00013" summary="Fix space x = %.2f">
       <option name="closed" value="true" />
@@ -460,7 +443,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691054501932</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Submit Baitapbuoi10_bai1">
+      <option name="closed" value="true" />
+      <created>1691068348121</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1691068348121</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -478,7 +469,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Submit exercise 8" />
     <MESSAGE value="Add scanner.close()" />
     <MESSAGE value="Submit exercise 7" />
     <MESSAGE value="Remove comment for ex7" />
@@ -503,7 +493,8 @@
     <MESSAGE value="Revise the menu" />
     <MESSAGE value="Submit Baitapbuoi8_bai1" />
     <MESSAGE value="Submit Baitapbuoi8_bai3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Submit Baitapbuoi8_bai3" />
+    <MESSAGE value="Submit Baitapbuoi10_bai1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Submit Baitapbuoi10_bai1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
