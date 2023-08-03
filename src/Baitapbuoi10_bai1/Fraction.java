@@ -22,10 +22,7 @@ public class Fraction {
         this.numerator=numerator;
         this.denominator=denominator;
     }
-    public void importValue(int numberator, int denominator) {
-        this.numerator = numberator;
-        this.denominator = denominator;
-    }
+
     public String toString() {
         return(this.numerator +"/"+this.denominator);
     }

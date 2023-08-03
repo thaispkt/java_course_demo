@@ -80,7 +80,6 @@ class Student {
     }
 
     // The getInfo() method to represent the object in string form
-    @Override
     public String toString() {
         return "Student ID: " + id + ", Name: " + name + ", Theory Score: " + theoryScore + ", Practice Score: "
                 + practiceScore;

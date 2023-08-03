@@ -100,7 +100,7 @@ public class Account {
     }
 
     // Phương thức toString để trả về chuỗi chứa toàn bộ thông tin tài khoản, yêu cầu định dạng tiền tệ
-    @Override
+
     public String toString() {
         DecimalFormat currencyFormat = new DecimalFormat("#,##0.00");
         return "Account Number: " + accountNumber +  ", Account Name: " + accountName +

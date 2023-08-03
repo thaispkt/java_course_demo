@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Submit Baitapbuoi10_bai1" />
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Remove @Override">
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Fraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi10_bai1/Fraction.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,14 +60,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689675360432</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Fix space x = %.2f">
-      <option name="closed" value="true" />
-      <created>1690130874051</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1690130874051</updated>
     </task>
     <task id="LOCAL-00014" summary="Bai tap buoi 4-5">
       <option name="closed" value="true" />
@@ -451,7 +445,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691068348121</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Remove @Override">
+      <option name="closed" value="true" />
+      <created>1691068760901</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1691068760901</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -469,7 +471,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Add scanner.close()" />
     <MESSAGE value="Submit exercise 7" />
     <MESSAGE value="Remove comment for ex7" />
     <MESSAGE value="Fix return -1" />
@@ -494,7 +495,8 @@
     <MESSAGE value="Submit Baitapbuoi8_bai1" />
     <MESSAGE value="Submit Baitapbuoi8_bai3" />
     <MESSAGE value="Submit Baitapbuoi10_bai1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Submit Baitapbuoi10_bai1" />
+    <MESSAGE value="Remove @Override" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove @Override" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
