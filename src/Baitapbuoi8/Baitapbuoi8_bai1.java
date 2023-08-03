@@ -11,7 +11,7 @@ public class Baitapbuoi8_bai1 {
         float b = scanner.nextFloat();
         System.out.print("Enter c: ");
         float c = scanner.nextFloat();
-        QuadraticEquation quadratic = new QuadraticEquation(a, b, c);
-        quadratic.solve();
+        QuadraticEquation quadraticEquation = new QuadraticEquation(a, b, c);
+        quadraticEquation.solve();
     }
 }

@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Revise the menu">
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8/Baitapbuoi8_bai1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8/QuadraticEquation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai7/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai1/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai1/StudentApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai2/Rectangular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai4/Rectangular.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai2/RectangularApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai4/RectangularApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai3/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai3/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai3/StudentApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai3/StudentApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai4/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai6/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai4/StudentApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai6/StudentApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp_bai1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai7/StudentApp_bai1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8_bai5/StudentApp_bai2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8_bai7/StudentApp_bai2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi9_bai2/HieuTruong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi9_bai2/HieuTruong.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demoNgoaiPackage/DemoNgoaiPackageApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demoNgoaiPackage/DemoNgoaiPackageApplication.java" afterDir="false" />
+    <list default="true" id="003e2619-101d-4b02-9b04-9fd84d512aff" name="Changes" comment="Submit Baitapbuoi8_bai1">
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8/Baitapbuoi8_bai3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Baitapbuoi8/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Baitapbuoi8/Baitapbuoi8_bai1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baitapbuoi8/Baitapbuoi8_bai1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,14 +57,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1689675360432</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Optimze execise Baitapbuoi5_bai8">
-      <option name="closed" value="true" />
-      <created>1690130596369</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1690130596369</updated>
     </task>
     <task id="LOCAL-00011" summary="Optimze execise Baitapbuoi5_bai8">
       <option name="closed" value="true" />
@@ -465,7 +442,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690882397018</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Submit Baitapbuoi8_bai1">
+      <option name="closed" value="true" />
+      <created>1691052936234</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1691052936235</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -483,7 +468,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Submit bai 1 -&gt; bai 7" />
     <MESSAGE value="Check case &quot;No male officer found in the above list&quot; in bai7" />
     <MESSAGE value="Submit exercise 8" />
     <MESSAGE value="Add scanner.close()" />
@@ -508,7 +492,8 @@
     <MESSAGE value="Delete student based on ID" />
     <MESSAGE value="Convert array to ArrayList to manage student list" />
     <MESSAGE value="Revise the menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revise the menu" />
+    <MESSAGE value="Submit Baitapbuoi8_bai1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Submit Baitapbuoi8_bai1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
