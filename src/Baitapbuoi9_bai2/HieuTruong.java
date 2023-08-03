@@ -17,7 +17,7 @@ public class HieuTruong extends GiangVien {
         super(hoten, tuoi, gioiTinh); // public SinhVien(String hoTen, int tuoi, String gioiTinh)
     }
     public void nhap(String hoTen, int tuoi, String gioiTinh, String monDay, GiangVien[] listGiangVien ) {
-        super.nhap(hoTen, tuoi, gioiTinh, monDay);
+//        super.nhap(hoTen, tuoi, gioiTinh, monDay);
         this.danhSachGiangVien = listGiangVien;
     }
 }

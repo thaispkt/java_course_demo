@@ -1,4 +1,4 @@
-package Baitapbuoi8_bai4;
+package Baitapbuoi8_bai6;
 
 public class Student {
     String name;

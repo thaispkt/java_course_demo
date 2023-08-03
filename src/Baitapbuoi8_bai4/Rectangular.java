@@ -1,4 +1,4 @@
-package Baitapbuoi8_bai2;
+package Baitapbuoi8_bai4;
 
 import java.util.Scanner;
 

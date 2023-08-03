@@ -1,4 +1,4 @@
-package Baitapbuoi8_bai2;
+package Baitapbuoi8_bai4;
 
 public class RectangularApp {
     public static void main(String[] args) {

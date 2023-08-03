@@ -2,13 +2,21 @@ package Baitapbuoi8_bai3;
 
 public class StudentApp {
     public static void main(String[] args) {
-        Student student1 = new Student();
-        student1.name = "Nguyen Duy Thai";
-        student1.age = 35;
-        Student student2 = new Student();
-        student2.name = "Tran Van Tuan";
-        student2.age = 28;
-        System.out.println("Student 1: " + student1.name + ", age: " + student1.age);
-        System.out.println("Student 2: " + student2.name + ", age: " + student2.age);
+        Student studentA = new Student("Nguyen Van Tuan",18,"men"); // Neu nhu class ko dinh nghia
+//        Student studentA = new Student("Nguyen Van Tuan",18f,"men");
+        // constructor thi JAVA tu
+        // tao 1 ham constructor mac dinh
+//        studenA.fullName = "Nguyen Van Tuan";
+//        studenA.age = 18;
+//        studenA.gender = "Men";
+//        System.out.println("Name of student A: " + studenA.fullName);
+//        System.out.println("Age of student A: "+ studenA.age);
+        Student studentB = new Student("Tran Thi Thao",21,"women");
+//        studenB.fullName = "Tran Thi Thao";
+//        studenB.gender = "women";
+//        System.out.println("Name of student B: " + studenB.fullName);
+//        System.out.println("Age of student B: "+ studenB.age);
+        studentA.printInfo();
+        studentB.printInfo();
     }
 }
