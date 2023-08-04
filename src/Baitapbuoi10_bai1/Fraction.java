@@ -23,14 +23,10 @@ public class Fraction {
         numerator = 0;
         denominator = 1;
     }
-
-    ;
-
     public Fraction(int numerator, int denominator) {
         this.numerator = numerator;
         this.denominator = denominator;
     }
-
     public void importData(int i) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter numerator of fraction " + i + ": ");
