@@ -1,8 +1,8 @@
-package Baitapbuoi10_bai2;
+package Baitapbuoi11_bai3;
 
 import java.util.Scanner;
 
-public class SinhVien {
+public abstract class SinhVien implements ChucNang {
     protected String hoTen;
     protected int tuoi;
     protected String gioiTinh;
@@ -13,6 +13,30 @@ public class SinhVien {
     public SinhVien(String hoTen, int tuoi, String gioiTinh) {
         this.hoTen = hoTen;
         this.tuoi = tuoi;
+        this.gioiTinh = gioiTinh;
+    }
+
+    public String getHoTen() {
+        return hoTen;
+    }
+
+    public void setHoTen(String hoTen) {
+        this.hoTen = hoTen;
+    }
+
+    public int getTuoi() {
+        return tuoi;
+    }
+
+    public void setTuoi(int tuoi) {
+        this.tuoi = tuoi;
+    }
+
+    public String getGioiTinh() {
+        return gioiTinh;
+    }
+
+    public void setGioiTinh(String gioiTinh) {
         this.gioiTinh = gioiTinh;
     }
 

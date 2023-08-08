@@ -1,6 +1,6 @@
 package Baitapbuoi9_bai2;
 
-import Baitapbuoi10_bai2.GiangVien;
+import Baitapbuoi11_bai3.GiangVien;
 
 public class HieuTruong extends GiangVien {
     GiangVien[] danhSachGiangVien;

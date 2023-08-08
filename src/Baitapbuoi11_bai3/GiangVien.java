@@ -1,10 +1,10 @@
-package Baitapbuoi10_bai2;
+package Baitapbuoi11_bai3;
 
 import java.util.Scanner;
 
-public class GiangVien extends SinhVien {
+public class GiangVien extends SinhVien implements ChucNang{
     String monDay;
-
+    public GiangVien() {}
     // Tu khoa dai dien cho class cha: super
     public GiangVien(String hoTen, int tuoi, String gioiTinh, String monDay) {
         super(hoTen, tuoi, gioiTinh);
@@ -20,17 +20,17 @@ public class GiangVien extends SinhVien {
         this.monDay = scanner.nextLine();
     }
 
-    /*
-Override (ghi đè phương thức): nếu như bên class cha cha mà có phương thức nhưng phương thức
-đó không thoar maxn được nhu cu xử lý của class thì class con sẽ định nghĩa lại phương thức đó
-với logic mới giành riêng cho class con.
-Dùng Override
-overload( nạp chồng) : tức là các function có cùng tên nhưng khác nhau số lượng tham số
-hoặc kiểu dữ liệu tham số
-     */
     @Override
     public void printInfo() {
         super.printInfo(); // Dung super de goi method cua class cha
         System.out.println("Mon day la: " + this.monDay);
+    }
+    @Override
+    public void thoiGianDenTruong() {
+        System.out.println("Thời gian đi làm không có tham số");
+    }
+    @Override
+    public void thoiGianDenTruong(String thoiGian) {
+        System.out.println("Thời gian đi làm có tham số: " + thoiGian );
     }
 }
