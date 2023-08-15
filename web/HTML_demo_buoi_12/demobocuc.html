@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        Nếu có 2 thẻ div cùng cấp thì thẻ div thì thẻ div khai báo sau sẽ nằm dưới
+        CSS: dùng để trang trí cho các cặp thẻ
+        - inline CSS: sử dụng trực tiếp CSS ngay tại các thẻ bên trong html
+        Cú pháp: <thẻ tag style="key:value"></thẻ tag>
+        <hr>: thẻ gạch ngang
+        padding: 10px => Trên 10 px, phải 10px, dưới 10px, trái 10px
+        padding: 5 px 10px -> trên dưới: 5 px, trái phải: 10px
+        padding: 1px 2 px 3px 4px => Trên: 1px, phải: 2px, dưới: 3px, trái: 4px
+        Thẻ <div> nếu có thuộc tính của style sẽ ảnh hưởng tất cả thuộc tính thẻ con. Nếu như thẻ con có thuộc tính thì sẽ ko bị ảnh hưởng bởi thuộc tính của thẻ cha
+        Thẻ <p>: sẽ xuống dòng
+        Thẻ span: ko xuống dòng
+        3 loại image có thể load
+        - image URL
+        - Hình bên trong source code
+        - Hình ảnh base64 encoding
+        Cách đi thư mục:
+        - Nếu hình và file html.index cùng cấp thì gọi trực tiếp tên hình
+        - Nếu hình nằm trong thư mục thì phải đi vào thư mục chức hình => /path/filename.jpg 
+        VD: /images: -> có / là đi đường dẫn tuyệt đối
+        còn images/image.jpg -> không có / là đi đường dẫn tương đối
+        - Đi ra 1 cấp folder thì dùng: ../
+        - Chuyển trang: redirect. Khi nhấn nút Thế giới thì mở trang thegioi.html
+        - Thẻ chuyển trang: <a href="đường dẫn file muốn chuyển tới"></a>
+        - <img: thuộc tính border-radius để bo góc hình
+        - Thẻ div giới hạn limit width, height nếu ko div rất to
+        - De ko thay doi layout tu desktop sang mobile thì phải dùng bootstrap, reponsive.
+        The <span>: text màu trắng ko xuống dòng
+     -->
+    <span> Hello thẻ span</span>
+    <div style="
+     color: red;
+     background-color: bisque;
+     width: 200px;
+     height: 100%;">
+        Hello the chia bo cuc
+    </div>
+    <div style="color: red; background-color: yellow; text-align: center; width: 100%;">
+        Hello the chia bo cuc 2
+    </div>
+    <a href="coffee.html">Chuyển qua page coffee</a>
+    <img src="https://thcs-thptlongphu.edu.vn/wp-content/uploads/2023/03/hinh-anh-dep-tren-mang2b252822529.jpg"
+        alt="No image found" style="
+    width: 20%;
+    height: 20%;">
+    <img src="/images/doremon.jpg" alt="No image found">
+
+</body>
+
+</html>
