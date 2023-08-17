@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net" modified="2023-08-08T14:08:06.934Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="BTMRaZKnLQJlWk7Jy9-y" version="21.6.6" type="device">
+  <diagram name="Page-1" id="C_LaiuJHd1A2VmJooze7">
+    <mxGraphModel dx="880" dy="1647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-1" value="&lt;div style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;/*&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;DEMO BÀI TOÁN XÀI TOÀN BỘ ĐÓNG GÓI + KẾ THỪA &amp;amp; ĐA HÌNH&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;        Công ty du lịch V quản lý thông tin là các chuyến xe. Thông tin của 2 loại chuyển xe:&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;        * Chuyến xe nội thành: Mã số chuyến, Họ tên tài xế, số xe, số tuyến, số km đi được, doanh thu.&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;        * Chuyến xe ngoại thành: Mã số chuyến, Họ tên tài xế, số xe, nơi đến, số ngày đi được, doanh thu. Xây dựng chương trình quản lý các chuyến xe, tính tổng doanh thu của công ty và doanh thu từng loại xe&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;        Tính doanh thu các cho công ty, cho ngoại thành và nội thành.&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;        1. Đọc kỹ nghiệp vụ&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;        2. Phân tích sơ đồ lớp, các cây kế thừa&lt;br&gt;3. Tổ chức lớp cha&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;        4. Tổ chức lớp con&lt;/span&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;        5. Xác định các phương thức Override &lt;br&gt;6. Xử lý các nghiệp vụ theo giải thuật&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;*/&lt;/span&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;strokeColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="90" y="-40" width="620" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-2" value="Trip" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="360" width="160" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-3" value="# tripNumber: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-2">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-5" value="# driverName: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-2">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-24" value="# vehicleNumber: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-2">
+          <mxGeometry y="78" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-2">
+          <mxGeometry y="104" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-6" value="# calculateRevenue(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-2">
+          <mxGeometry y="112" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-8" value="InnerCityBusTrip&lt;span style=&quot;color: rgb(255, 255, 255); font-family: &amp;quot;Söhne Mono&amp;quot;, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Ubuntu Mono&amp;quot;, monospace; font-size: 14px; font-weight: 400; text-align: left; background-color: rgb(0, 0, 0);&quot;&gt; &lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="274" width="170" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-9" value="- routeNumber: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-8">
+          <mxGeometry y="26" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-13" value="- mileage: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-8">
+          <mxGeometry y="52" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-8">
+          <mxGeometry y="78" width="170" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-11" value="@Override" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-8">
+          <mxGeometry y="86" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-22" value="+&amp;nbsp;calculateRevenue(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-8">
+          <mxGeometry y="112" width="170" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-12" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="k2B3STsc0Cwn0S1hVH-o-2" target="k2B3STsc0Cwn0S1hVH-o-8">
+          <mxGeometry x="0.0051" width="160" relative="1" as="geometry">
+            <mxPoint x="260" y="390" as="sourcePoint" />
+            <mxPoint x="420" y="390" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-15" value="SuburbanTrip&lt;span style=&quot;color: rgb(255, 255, 255); font-family: &amp;quot;Söhne Mono&amp;quot;, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Ubuntu Mono&amp;quot;, monospace; font-size: 14px; font-weight: 400; text-align: left; background-color: rgb(0, 0, 0);&quot;&gt; &lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="480" width="160" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-16" value="- destination: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-15">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-19" value="- TravelDays: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-15">
+          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-15">
+          <mxGeometry y="78" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-18" value="@Override" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-15">
+          <mxGeometry y="86" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-23" value="+&amp;nbsp;calculateRevenue(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="k2B3STsc0Cwn0S1hVH-o-15">
+          <mxGeometry y="112" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="k2B3STsc0Cwn0S1hVH-o-20" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" edge="1" parent="1" source="k2B3STsc0Cwn0S1hVH-o-2" target="k2B3STsc0Cwn0S1hVH-o-15">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="250" y="420" as="sourcePoint" />
+            <mxPoint x="410" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
