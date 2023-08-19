@@ -1,0 +1,6 @@
+1. Không bỏ đơn vị px (pixel)
+    <div style="width: 300; height: 450;"> : WRONG
+    <div style="width: 300px; height: 450px;"> : RIGHT
+2. Dùng thuộc tính color thay vì background-color
+  <body style="color:#2d4255;"> : WRONG
+  <body style="background-color:#2d4255;"> : WRONG
