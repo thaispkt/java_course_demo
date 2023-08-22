@@ -23,15 +23,18 @@
 }
 .pink {
   background-color: pink;
+  text-align: left;
 }
 .red {
   background-color: red;
+  text-align: start;
 }
 .green {
   background-color: green;
 }
 .blue {
   background-color: blue;
+  text-align: end;
 }
 .yellow {
   background-color: yellow;
@@ -44,4 +47,7 @@
 }
 .brown {
   background-color: #d2691e;
+}
+table {
+  text-align: center  ;
 }
