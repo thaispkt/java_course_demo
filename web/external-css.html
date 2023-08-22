@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <style>
+      /* Tạo ra 1 class có tên là input (vì có dấu chấm) */
+    </style> -->
+    <!-- import file index.csss để sử dụng được class và id trong file này -->
+    <link href="./css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- 
+    2 thuộc tính sử dụng cho internal CSS và external CSS
+    class (.): được phép sử dụng ở nhiều thẻ tag trong HTML
+    id (#): tên đặt phải duy nhất không được phép trùng, chi được phép sử dụng cho 1 thẻ tag HTML
+    Trong project thực tế thường sử dụng class hơn so với id
+    class="input margin-top20 background-aqua": thuộc tính sẽ effect từ trái qua phải, từ  trên xuống dưới.
+    <input type="text" class="input" placeholder="User name" />
+    <input type="text" class="input" placeholder="Pasword" />
+    Nếu dùng class thì khi dùng logic code thì sẽ ko lấy được username hay password bởi vì đều chung là class name -> phải dùng id
+    <input id="btn-username" type="text" class="input" placeholder="User name" />
+    <input id="btn-password" type="text" class="input" placeholder="Pasword" />    
+    import file index.csss để sử dụng được class và id trong file này 
+    Thứ tự ưu tieen:
+    1. inline CSS: luôn ưu tiên đầu
+    2. internal
+    3. external
+    -->
+      
+    <input type="text" class="input" placeholder="User name" />
+    <br />
+    <input type="text" class="input margin-top20 background-aqua" placeholder="Pasword" />
+    <button id="btn" class="background-red">Login</button>
+  </body>
+</html>

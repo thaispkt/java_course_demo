@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Tạo ra 1 class có tên là input (vì có dấu chấm) */
+      .input {
+        background-color: rgb(214, 159, 87);
+        height: 42px;
+        width: 300px;
+        border: 1px;
+      }
+      .margin-top20 {
+        margin-top: 20px;
+      }
+      .background-red {
+        background-color:red;
+      }
+      #btn {
+        width: 300px;
+        height: 42px;
+        background-color:aquamarine;
+        border-radius: 20px;
+        border: 0px;
+        margin-top: 10px;
+      }
+      #btn-red {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    2 thuộc tính sử dụng cho internal CSS và external CSS
+    class (.): được phép sử dụng ở nhiều thẻ tag trong HTML
+    id (#): tên đặt phải duy nhất không được phép trùng, chi được phép sử dụng cho 1 thẻ tag HTML
+    Trong project thực tế thường sử dụng class hơn so với id
+    class="input margin-top20 background-aqua": thuộc tính sẽ effect từ trái qua phải, từ  trên xuống dưới.
+    <input type="text" class="input" placeholder="User name" />
+    <input type="text" class="input" placeholder="Pasword" />
+    Nếu dùng class thì khi dùng logic code thì sẽ ko lấy được username hay password bởi vì đều chung là class name -> phải dùng id
+    <input id="btn-username" type="text" class="input" placeholder="User name" />
+    <input id="btn-password" type="text" class="input" placeholder="Pasword" />    
+
+   -->
+    <input type="text" class="input" placeholder="User name" />
+    <br />
+    <input type="text" class="input margin-top20 background-aqua" placeholder="Pasword" />
+    <button id="btn" class="background-red">Login</button>
+  </body>
+</html>

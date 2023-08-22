@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- border: 2 line là do spacing -> có thể bỏ được -->
+    <!-- 
+        Merge cột: colspan="số lượng cột sẽ chiếm"
+        Merge dòng: rownspan="số lượng dòng sẽ chiếm"
+     -->
+    <table border="1px">
+      <!-- thead: để khai báo header -> column name  -->
+      <thead>
+        <tr>
+          <!-- <td>Language and framework</td>
+          <td></td> -->
+          <td colspan="2">Language and framework</td>  
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Python</td>
+            <td>Django</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Javascript</td>
+            <td>React.JS</td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <td>Vue.js</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

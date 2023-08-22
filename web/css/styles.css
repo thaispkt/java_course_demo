@@ -1,0 +1,47 @@
+.input {
+  background-color: rgb(214, 159, 87);
+  height: 42px;
+  width: 300px;
+  border: 1px;
+}
+.margin-top20 {
+  margin-top: 20px;
+}
+.background-red {
+  background-color: red;
+}
+#btn {
+  width: 300px;
+  height: 42px;
+  background-color: aquamarine;
+  border-radius: 20px;
+  border: 0px;
+  margin-top: 10px;
+}
+#btn-red {
+  background-color: red;
+}
+.pink {
+  background-color: pink;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+.orangered {
+  background-color: #ff8c00;
+}
+.brown {
+  background-color: #d2691e;
+}
