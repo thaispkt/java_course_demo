@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/hospital.css" rel="stylesheet" />
+    <link href="./css/hospital.css" rel="stylesheet" />
   </head>
   <body style="margin: 0px">
     <div
@@ -17,55 +17,91 @@
     >
       Contact Us +91 96366 20000 / 01 | ukh@hospital.com
     </div>
-    <div>
+    <div
+      style="
+        font-size: 50px;
+        background-color: aquamarine;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 80px;
+      "
+    >
+      <span style="color: #538ac5">UK</span>
+      <span>Hospital</span>
+      <span style="font-size: 14pt; margin-left: 200px">Home</span>
+      <span style="font-size: 14pt; margin-left: 10px">About</span>
+      <span style="font-size: 14pt; margin-left: 10px">Service</span>
+      <span style="font-size: 14pt; margin-left: 10px">Doctor</span>
+      <span style="font-size: 14pt; margin-left: 10px">Contact us</span>
+    </div>
+    <div style="position: relative">
+      <img
+        style="width: 100%; height: 350px"
+        src="./images/doctor-online.jpg"
+      />
       <div
         style="
-          height: 50px;
-          font-size: 26px;
-          line-height: 50px;
-          align-items: center;
-          margin-left: 20px;
-        "
-      >
-        <span style="color: #538ac5">UK</span>
-        <span> Hospital</span>
-      </div>
-      <div
-        style="
-          text-align: end;
-          margin-right: 300px;
-          font-size: 20px;
-          margin-top: 0px;
-        "
-      >
-        <span>Home</span>
-        <span style="margin-left: 10px">About</span>
-        <span style="margin-left: 10px">Service</span>
-        <span style="margin-left: 10px">Doctor</span>
-        <span style="margin-left: 10px">Contact us</span>
-      </div>
-      <img class="slider" src="images/doctor-online.jpg" />
-      <div
-        style="
-          position: absolute;
-          top: 112px;
-          left: 100px;
-          text-align: justify;
-          height: 200px;
-          width: 1200px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: left;
-          font-size: 24px;
-          color: rgb(223, 217, 217);
           background-color: rgba(128, 128, 128, 0.4);
-          /* opacity: 0.4; */
+          position: absolute;
+          top: 0;
+          width: 80%;
+          height: 150px;
+          margin-left: 100px;
+          color: white;
+          font-size: 20pt;
+          padding-top: 90px;
+          padding-left: 30px;
         "
       >
-        <span>Health Care Service</span>
+        <span>Health Care Service</span><br />
         <span>We Care About Your Health</span>
       </div>
     </div>
+    <div style="padding-left: 50px;">
+        <p>We are medical center</p>
+        <p><h3>We Have Medicare Plan Options for You!</h3></p>
+        <p>At our medical center, we go beyond the ordinary to ensure your health and comfort. Our experienced professionals are dedicated to delivering personalized care that puts you at the center of everything we do. From preventive services to innovative treatments, we're here to guide you on your journey to better health.</p>
+<p>Join us today and experience the difference of exceptional medical care that's tailored to you. Your health is our mission, and we're honored to be your partner in wellness.</p>
+<ul >
+    <li>Our Medicare Plans: Tailored to Your Needs</li>
+    <li>Caring for You: Every Step of the Way</li>
+    <li>Wellness Starts Here: Choose Excellence</li>
+    <li>Health is Wealth: Invest in Your Well-Being</li>
+    <li>Your Health, Your Choice: Discover the Possibilities</li>
+  </ul>
+      </div>    
+      <hr />
+      <div style="text-align: center;">
+        <p><h3>Make an Appoinment</h3></p>
+      </div >
+      <div style="background-color:darkkhaki;padding-left: 500px">
+        <form>
+            <div style="background-color: aquamarine;; width: 400px; height: 20px;">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name" style="float: right;">
+            </div>
+            <div style="background-color: burlywood;; margin-top: 20px; width: 400px; height: 20px;">
+                <input type="text" placeholder="Email ID">
+                <input type="text" placeholder="Mobile No" style="float: right;" >
+            </div>
+            <div style="background-color: lightgreen;; margin-top: 20px;width: 400px; height: 20px;">
+                <select style="width: 170px; height: 100%;" id="Sex">
+                    <option value="-- Sex --">-- Sex --</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                <input type="text" placeholder="Appoinment date" style="float: right;">
+            </div> 
+            <div style="background-color: #2fa5eb;; margin-top: 20px; width: 400px;">
+                <textarea style="width: 100%; border-box;" cols="30" rows="10"></textarea>
+            </div>
+            <div style="background-color: darkorchid;; margin-top: 20px; margin-bottom: 40px;width:400px">
+                <button style="width: 100%; background-color: #2fa5eb; color: white;">
+                    SUBMIT
+                </button>  
+            </div>
+  
+        </form>
+      </div>
   </body>
 </html>
