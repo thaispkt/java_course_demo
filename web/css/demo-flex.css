@@ -1,0 +1,30 @@
+.container {
+  background-color: antiquewhite;
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  /* flex-direction: column;  
+  align-items: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  gap: 20px;
+  /* Nếu xài gap trong container thì bỏ thuộc tính margin trong box */
+  /* align-items: center;
+    text-align: center; */
+  /* 
+    flex-direction:row -> Trục chính: trục ngang, trục phụ: trục dọc
+    flex-direction:column -> Trục chính: trục dọc, trục phụ: trục ngang    
+    */
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: aqua;
+  /* margin: 10px; */
+}
