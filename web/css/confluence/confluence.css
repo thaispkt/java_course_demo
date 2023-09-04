@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card{
+  height: 40px;
+  width: 400px;
+  /* width: auto; */
+  padding: 25px;
+  display:flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 30px;  
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.icon-box {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+  background-color: lightblue;
+  border-radius: 50%;
+}
+.icon{
+  width: 24px; 
+  height: 24px;
+}
+.title{
+  font-size: 10pt;
+  /* font-weight: 700; */
+  font-family: Arial;
+  font-weight: bolder;
+  color: blue;
+  text-decoration: underline
+}
+.description{
+  font-size: 10pt;  
+  font-family: Arial;  
+}
