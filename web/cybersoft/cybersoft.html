@@ -9,19 +9,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/cybersoft.css">
+    <style>
+        /* Add custom CSS to fix position */
+        .overlay-wrapper .position-absolute {
+            top: 0;
+            z-index: 1;
+        }
+
+        .overlay-black {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10%;
+        }
+
+        /* Add custom CSS for font sizes */
+        .title-text {
+            font-size: 20px;
+        }
+
+        .paragraph-text {
+            font-size: 12px;
+        }
+    </style>
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <!-- <button type="button" class="btn">Base class</button>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
-    <button type="button" class="btn btn-danger btn-orange">Danger</button> -->
-
     <div class="container d-flex justify-content-between">
         <h2>Cybersoft</h2>
         <nav class="navbar navbar-expand-sm bg-body-tertiary">
@@ -64,53 +79,69 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
-                        </li>                        
+                        </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <button class="btn btn-danger" type="submit">Get started</button>
                     </form>
                 </div>
             </div>
-        </nav>       
+        </nav>
     </div>
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/slides/slide-1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+            <div class="carousel-item active overlay-wrapper">
+                <img src="./images/slides/slide-1.jpg" class="d-block w-100" alt="...">
+                <div
+                    class="position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center overlay-black">
+                    <h1 class="title-text">Cybersoft: Where Innovation Meets Excellence</h1>
+                    <p class="paragraph-text">It is a long-established fact that innovation and excellence are at the
+                        core of everything we do at Cybersoft. Our products are designed not just to meet, but to exceed
+                        the expectations of our clients.</p>
+                    <button class="btn btn-danger" type="submit">Read more</button>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./images/slides/slide-2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+            <div class="carousel-item overlay-wrapper">
+                <img src="./images/slides/slide-2.jpg" class="d-block w-100" alt="...">
+                <div
+                    class="position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center overlay-black">
+                    <h1 class="title-text">Building Trust Through Collaboration</h1>
+                    <p class="paragraph-text">Social learning is a powerful way to learn new skills and knowledge. It
+                        happens when people learn from each other through interaction and collaboration.</p>
+                    <button class="btn btn-danger" type="submit">Read more</button>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./images/slides/slide-3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+            <div class="carousel-item overlay-wrapper">
+                <img src="./images/slides/slide-3.jpg" class="d-block w-100" alt="...">
+                <div
+                    class="position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center overlay-black">
+                    <h1 class="title-text">Testlio Remote: The Future of Remote Testing</h1>
+                    <p class="paragraph-text">Testlio is a leading provider of remote testing services. They offer a
+                        variety of testing services, including manual testing, automated testing, and performance
+                        testing. They also have a large pool of testers who are available to test your software.</p>
+                    <button class="btn btn-danger" type="submit">Read more</button>
+                </div>
             </div>
-          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>     
+    </div>
 </body>
 
 </html>
