@@ -1,0 +1,252 @@
+Nguyễn Ảnh Gia Bảo: Anh Thanh anh Tòng rảnh cho em hỏi về race condition với. Em mới bị 1 cú 2 request cách nhau 30ms
+Lê Giang Thanh: Bi sao ku
+Nguyễn Ảnh Gia Bảo: em dùng Redis để cache lại 2 số max và current. mà có vẻ dùng chưa đúng nên khi 2 request tới cái nó vẫn thỏa điều kiện và chạy tiếp
+Lê Giang Thanh: Em lam rate limit ha ?
+Nguyễn Ảnh Gia Bảo: max = 10, current = 9 -> request tới em kiểm tra chưa max thì em set + 1 thì trong lúc đó nó đồng thời cộng lên thành 11. em làm cho cái vượt quá số lệnh trong 1 khoảng thời gian config
+Tong Nguyen: hai cái request cách nhau 20s đc xử lý bởi cùng thread hay khác thread hay khác cả process ?
+Nguyễn Ảnh Gia Bảo: theo em hiểu là cùng process mà khác thread
+Tong Nguyen: vậy em có cài đặt mutex chưa ? nếu luôn luôn cùng process thì dùng mutex cho lẹ
+Nguyễn Ảnh Gia Bảo: em chưa cài đặt, giờ đang tính chọn cách test thử
+Tong Nguyen: em dùng GO hả
+Lê Giang Thanh: Chua hieu lam, em chua cai sao biet bi loi
+Nguyễn Ảnh Gia Bảo: nhưng mà có cái em hơi thắc mắc là nếu nó chờ lâu tốn resources thì nó tự chuyển sang request tiếp theo sang 1 pods khác
+Tong Nguyen: kiểu Bảo có cái limit
+Nguyễn Ảnh Gia Bảo: em bị lỗi là do mới chỉ dùng redis để cache set + 1 thôi, bị auto test đánh fail test case (edited) 
+Tong Nguyen: set limit = 10. mỗi lần có request thì usage += 1. làm sao cái usage nó ra tới 11 đúng ko
+Nguyễn Ảnh Gia Bảo: đúng rồi anh, tối đa chỉ được = 10 
+Tong Nguyen: cái 10 và cái số đã sài (1,2 ,3...), em đang lưu ở đâu ?
+Nguyễn Ảnh Gia Bảo: em lưu 2 chỗ: redis và postgres
+Tong Nguyen: khi có request tới, em lấy ra cái current usage
+if current usage < max thì em + 1 lên và set lại cả redis và postgres hả
+Nguyễn Ảnh Gia Bảo: đúng anh
+Tong Nguyen: ok cái này có một cách là dùng redlock của redis. anh @Lê Giang Thanh có cách nào đơn giản hơn ko ?
+ok thôi trong lúc đợi anh Thanh trả lời
+thì một cách để giải quyết là cái này RedisRedis https://redis.com/glossary/redlock/
+Learn about Redlock, a distributed lock manager that allows multiple processes to coordinate access to shared resources in a distributed environment , and discover best practices for safe and effective use.
+Với GO thì có thư viện ở đây: https://github.com/go-redsync/redsync
+GitHubGitHub
+GitHub - go-redsync/redsync: Distributed mutual exclusion lock using Redis for Go
+Distributed mutual exclusion lock using Redis for Go - GitHub - go-redsync/redsync: Distributed mutual exclusion lock using Redis for Go (68 kB)
+https://github.com/go-redsync/redsync
+cụ thể nó chính là một cái mutex nhưng là distributed mutex
+Nguyễn Ảnh Gia Bảo: Thanks anh Tòng, để em nghiên cứu thử
+Tong Nguyen: apply được khi request được xử lý bởi các process (pod) khác nhau
+
+
+"github.com/go-redsync/redsync/v4/redis/goredis/v9"
+)
+func main() {
+// Create a pool with go-redis (or redigo) which is the pool redisync will 
+// use while communicating with Redis. This can also be any pool that 
+// implements the `redis. Pool interface.
+client := goredislib.NewClient(&goredislib.Options{
+Addr: "localhost:6379",
+})
+
+pool := goredis.NewPool(client) // or, pool := redigo.NewPool(...)
+// Create an instance of redisync to be used to obtain a mutual exclusion // lock.
+rs := redsync.New(pool)
+// Obtain a new mutex by using the same name for all instances wanting the // same lock.
+mutexname = "my-global-mutex"
+mutex = rs.NewMutex (mutexname)
+// Obtain a lock for our given mutex. After this is successful, no one else // can obtain the same lock (the same mutex name) until we unlock it.
+if err := mutex. Lock(); err != nil {
+}
+panic(err)
+// Do your work that requires the lock.
+increase usage and store to redis + db
+// Release the lock so other processes or threads can obtain a lock. 
+if ok, err := mutex.Unlock(); !ok || err != nil {
+panic("unlock failed")
+}
+}
+
+em cần code đoạn check usage < max và increase usage ở chỗ màu đỏ này (// Do your work that requires the lock và // Release the lock so other processes or threads can obtain a lock.)
+lưu DB và lưu lên redis cũng phải nằm trong đoạn màu đỏ đó luôn
+Nguyễn Ảnh Gia Bảo: để em xem test thử
+Tong Nguyen: nói chung em cần xác định code nào là code bị race condition rồi đặt cái code đó vào trong đoạn màu đỏ anh đã đưa sẵn (edited) 
+với trường hợp em nói thì từ lúc em access cái current usage, tới lúc kiểm tra, tăng lên 1 và lưu ngược lại
+đều là code bị race condition nên cần bỏ tất cả cái logic đó vào đoạn màu đỏ
+Nguyễn Ảnh Gia Bảo: ok anh
+Tong Nguyen: còn ko thì em phải chuyển xử lý request về xử lý tuần tự. ví dụ publish vào kafka mà chỉ có duy nhất một consumer chẳng hạn. anh ko rành kafka lắm, chỉ biết lý thuyết
+Nguyễn Ảnh Gia Bảo: kafka thì em cũng hiểu là vô queue nên nó sẽ tuần tự. mà có cái giờ xin resource nó khó nên em đang xem tận dụng những cái đang có
+Tong Nguyen. uh em publish 2 task vào queue và cái consumer nó sẽ xử lý tuần tự khi đó sẽ hết race condition nhưng thay đổi code sẽ hơi nhiều có khi thay đổi cả flow này nọ nên dễ nhất theo anh nghĩ là dùng Redlock
+Nguyễn Ảnh Gia Bảo: để em tận dụng cái redis này thử. thấy cũng khả quan. chỉ sợ nó chậm performance thôi
+Tong Nguyen: có sẵn redis rồi nên nó khả quan. ko về mặt lý thuyết thì gần như ko ảnh hưởng. do kiểu nào thì em cũng phải tuần tự xử lý cái quan trọng là em chỉ đặt code bị race condition vào giữa mutex lock và unlock thôi. code nào ko bị race condition thì em đừng bỏ vào trong. nếu ko toàn bộ code sẽ thành tuần tự hết
+Nguyễn Ảnh Gia Bảo: dạ ok anh
+Lê Giang Thanh: thực ra vấn dề là em muốn limit một cái gì
+9:58
+còn số đếm ko quan trọng
+9:59
+nên auto test đang check sai mục đích
+10:01
+thí dụ nếu code limit của em là
+if current_usage < max  {
+ //do action
+} else {
+//don't action return error
+}
+thì em cứ cho current_usage tăng hoài cũng chả sao
+Tong Nguyen: ý của anh Thanh là thay vì cho nó làm 10 lần thì với code hiện tại của em nó có thể làm 12 lần nhưng tới 12 lần cũng thôi nó ko làm thêm nữa
+
+Lê Giang Thanh: ko vẫn làm 10 lần nhưng số usage vãn có thế đếm > 10
+Tong Nguyen: sao được hiện tại nó làm 11 lần rồi kìa
+Lê Giang Thanh: có khi điều kiện anh viết ko đúng nhưng vẫn làm exactly n lần dược
+Nguyễn Ảnh Gia Bảo: đúng là nó hơn 10 thì đã không làm nữa
+Lê Giang Thanh: trong redis có lệnh https://redis.io/commands/incr/
+RedisRedis INCR
+Increments the integer value of a key by one. Uses 0 as initial value if the key doesn't exist.
+em sài lệnh này
+Nguyễn Ảnh Gia Bảo: nhưng mà max 10 mà đã làm 11
+Lê Giang Thanh: đừng làm theo kiểu lấy về cộng rồi set lại
+Nguyễn Ảnh Gia Bảo: nên bị báo lỗi
+Lê Giang Thanh: thì thế nào nó cũng bị lỗi còn cái này là atomic operation
+chứ làm trên app, get rồi +1, rồi set thì 2 thằng chạy cùng lúc là thế nào cũng bị sai
+Tong Nguyen: INCR xong rồi check cũng là cách nhưng nếu nhìn vào cái usage sẽ có khi thấy nó lên hơn 10 
+ý là cái usage variable còn thực sự thì đúng là nó chỉ làm đc MAX N lần
+
+
+Lê Giang Thanh
+  10:05 PM
+đúng rồi, nên anh mới nói cái check mà usage là ko đúng mục dích, mục đích là dới hạn n request
+10:06
+cái này sau đó em set time expire cho cái usage
+10:06
+nó sẽ là rate limt n request trong x seconds
+
+
+Tong Nguyen
+  10:07 PM
+@Nguyễn Ảnh Gia Bảo
+ làm theo cách anh Thanh cũng ok
+10:07
+vấn để chỉ là khi nhìn vào cái biến usage trên REDIS
+10:07
+có khi nó ra tới mười mấy
+10:07
+chứ ko phải 10
+10:07
+n = INCR(usage)
+if n < max: do_something
+10:07
+code như vầy nè
+10:07
+https://redis.io/commands/incr/
+
+
+Nguyễn Ảnh Gia Bảo
+  10:08 PM
+em cũng hiểu sơ qua
+10:08
+nhưng mà có cái chỗ này sửa cũng khá nhiều code bên em
+10:08
+để em nghiên cứu thử
+
+
+Lê Giang Thanh
+  10:08 PM
+còn nếu em muốn cho auto check
+10:09
+thì em suear cái usage thành request , sau đó tạo thêm biên actual_usage rồi kêu auto test checkactual_usage (edited) 
+:heart:
+1
+
+
+
+Tong Nguyen
+  10:10 PM
+mà cái này
+10:11
+khi em store xuống DB
+10:11
+coi chừng bị lost update :smile:
+
+
+Lê Giang Thanh
+  10:11 PM
+lưu xuống DB chưa hiểu lắm, nhưng làm rate limit sử dụng DB thì hơi lạ :slightly_smiling_face:
+
+
+Tong Nguyen
+  10:11 PM
+có khi ko phải rate limit
+10:11
+mà là đến số usage :smile:
+
+
+Nguyễn Ảnh Gia Bảo
+  10:12 PM
+chỗ lưu là em đếm xong hiển thị cho 1 cái report
+
+
+Tong Nguyen
+  10:12 PM
+vậy em làm theo cách anh Thanh thì em phải tạo ra cái actual usage
+
+
+Nguyễn Ảnh Gia Bảo
+  10:12 PM
+cần 1 cái show trong khoảng thời gian có 1 bao nhiêu request (edited) 
+
+
+Lê Giang Thanh
+  10:13 PM
+vậy thfi phải làm theo cách anh :))
+:smile:
+1
+
+
+
+Tong Nguyen
+  10:13 PM
+n = INCR(temp)
+if n < max: do something and INCR(actual)
+10:13
+rồi em cầm cái actual đi report
+
+
+Lê Giang Thanh
+  10:13 PM
+mới có được cả số request và acutal để cầm đi report (edited) 
+
+
+Nguyễn Ảnh Gia Bảo
+  10:13 PM
+cũng hợp lý
+10:13
+:smile:
+
+
+Tong Nguyen
+  10:14 PM
+số lượng request chính là cái temp ở trên
+10:14
+còn cái actual là cái request mà được xử lý tiếp
+:heart:
+1
+
+
+
+
+
+
+10:14
+nhưng mà
+10:14
+nếu em store actual xuống DB
+10:14
+thì vẫn bị lost update nếu em ko có cơ chế giải quyết lost update nha
+New
+10:14
+ví dụ có 2 thằng đang giữ actual là 10 và 11
+10:14
+thằng 11 save trước
+10:15
+thằng 10 save sau thì cuối cùng nó là 10 chứ ko phải 11 đó :smile:
+
+
+Nguyễn Ảnh Gia Bảo
+  10:15 PM
+cái này em đang nghĩ hướng có key unique là account id rồi
+10:15
+nên chắc không bị trùng 1 lần update
