@@ -30,7 +30,7 @@ CREATE TABLE Product (
     ImportPrice INT NOT NULL,
     ListPrice INT NOT NULL,
     Quantity INT NOT NULL,
-    Discount DECIMAL(3, 2),
+    Discount DECIMAL(2, 2),
     AddedDate DATE,
     SupplierID INT,
     ProductType VARCHAR(50),
