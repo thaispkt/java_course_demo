@@ -120,20 +120,10 @@ VALUES
 	WHERE k.TenKhoa = 'Cong nghe Sinh hoc';
 
 -- 6.	Cho biết thông tin về sinh viên không tham gia thực tập
-	SELECT * FROM SinhVien;
-	SELECT * FROM HuongDan;
 	SELECT s.MaSV, s.HoTenSV, s.MaKhoa, s.NamSinh, s.QueQuan
 	FROM SinhVien s
 	LEFT JOIN HuongDan h ON s.MaSV = h.MaSV
 	WHERE h.MaSV IS NULL;
-	
-	SELECT *
-	FROM SinhVien s
-	LEFT JOIN HuongDan h ON s.MaSV = h.MaSV;
-	
-	SELECT *
-	FROM SinhVien s
-	JOIN HuongDan h ON s.MaSV = h.MaSV;
 
 -- 7.	Đưa ra mã Khoa, tên Khoa và số giảng viên của mỗi Khoa
 	SELECT k.MaKhoa, k.TenKhoa , COUNT(g.MaKhoa) AS SoGiangVien
