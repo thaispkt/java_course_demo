@@ -91,48 +91,47 @@ VALUES
  
    
 -- 1.	Đưa ra thông tin gồm mã số, họ tên và tên Khoa của tất cả các giảng viên
-	SELECT g.MaGV,g.HoTenGv,k.TenKhoa  
-	FROM GiangVien g
-	JOIN Khoa k ON g.MaKhoa = k.MaKhoa;
+	SELECT gv.MaGV,gv.HoTenGv,k.TenKhoa  
+	FROM GiangVien gv
+	JOIN Khoa k ON gv.MaKhoa = k.MaKhoa;
 
 -- 2.	Đưa ra thông tin gồm mã số, họ tên và tên Khoa của các giảng viên của Khoa ‘DIA LY va QLTN’  
-	SELECT g.MaGV,g.HoTenGv,k.TenKhoa  
-	FROM GiangVien g
-	JOIN Khoa k ON g.MaKhoa = k.MaKhoa 
+	SELECT gv.MaGV,gv.HoTenGv,k.TenKhoa  
+	FROM GiangVien gv
+	JOIN Khoa k ON gv.MaKhoa = k.MaKhoa 
 	WHERE k.TenKhoa = 'Dia ly va QLTN';
 	
 -- 3.	Cho biết số sinh viên của Khoa ‘Cong nghe Sinh hoc’
-	SELECT k.TenKhoa, COUNT(s.MaSV) AS SoSinhVien
-	FROM SinhVien s
-	JOIN Khoa k ON s.MaKhoa = k.MaKhoa
+	SELECT k.TenKhoa, COUNT(sv.MaSV) AS SoSinhVien
+	FROM SinhVien sv
+	JOIN Khoa k ON sv.MaKhoa = k.MaKhoa
 	WHERE k.TenKhoa = 'Cong nghe Sinh hoc';
 
 -- 4.	Đưa ra danh sách gồm mã số, họ tên và tuổi của các sinh viên Khoa ‘Toan’
-	SELECT s.MaSV, s.HoTenSV, YEAR(CURRENT_DATE()) - s.NamSinh AS Tuoi
-	FROM SinhVien s
-	JOIN Khoa k ON s.MaKhoa = k.MaKhoa
+	SELECT sv.MaSV, sv.HoTenSV, YEAR(CURRENT_DATE()) - sv.NamSinh AS Tuoi
+	FROM SinhVien sv
+	JOIN Khoa k ON sv.MaKhoa = k.MaKhoa
 	WHERE k.TenKhoa = 'Toan';
 
 -- 5.	Cho biết số giảng viên của Khoa ‘Cong nghe Sinh hoc’
-	SELECT k.TenKhoa, COUNT(g.MaGV) AS SoGiangVien
-	FROM GiangVien g
-	JOIN Khoa k ON g.MaKhoa = k.MaKhoa 
+	SELECT k.TenKhoa, COUNT(gv.MaGV) AS SoGiangVien
+	FROM GiangVien gv
+	JOIN Khoa k ON gv.MaKhoa = k.MaKhoa 
 	WHERE k.TenKhoa = 'Cong nghe Sinh hoc';
 
 -- 6.	Cho biết thông tin về sinh viên không tham gia thực tập
-	SELECT s.MaSV, s.HoTenSV, s.MaKhoa, s.NamSinh, s.QueQuan
-	FROM SinhVien s
-	LEFT JOIN HuongDan h ON s.MaSV = h.MaSV
-	WHERE h.MaSV IS NULL;
+	SELECT sv.MaSV, sv.HoTenSV, sv.MaKhoa, sv.NamSinh, sv.QueQuan
+	FROM SinhVien sv
+	LEFT JOIN HuongDan hd ON sv.MaSV = hd.MaSV
+	WHERE hd.MaSV IS NULL;
 
 -- 7.	Đưa ra mã Khoa, tên Khoa và số giảng viên của mỗi Khoa
-	SELECT k.MaKhoa, k.TenKhoa , COUNT(g.MaKhoa) AS SoGiangVien
-	FROM GiangVien g
-	JOIN Khoa k ON g.MaKhoa = k.MaKhoa 
-	GROUP BY g.MaKhoa;
+	SELECT k.MaKhoa, k.TenKhoa , COUNT(gv.MaKhoa) AS SoGiangVien
+	FROM GiangVien gv
+	JOIN Khoa k ON gv.MaKhoa = k.MaKhoa 
+	GROUP BY gv.MaKhoa;
 
 -- 8.	Cho biết số điện thoại của Khoa mà sinh viên có tên ‘Le Van Son’ đang theo học
-	SELECT * FROM SinhVien;
 	SELECT k.TenKhoa, k.DienThoai AS SoDienThoai
 	FROM SinhVien sv
 	JOIN Khoa k ON sv.MaKhoa = k.MaKhoa 
@@ -187,7 +186,7 @@ VALUES
 	GROUP BY k.TenKhoa;
 
 -- 8.	Cho biết thông tin về các sinh viên thực tập tại quê nhà
-	SELECT sv.MaSV, sv.Hotensv, sv.QueQuan, dt.NoiThucTap, dt.TenDeTai
+	SELECT sv.MaSV, sv.HoTenSV, sv.QueQuan, dt.NoiThucTap, dt.TenDeTai
 	FROM SinhVien sv
 	JOIN HuongDan hd ON sv.MaSV = hd.MaSV
 	JOIN DeTai dt ON hd.MaDeTai = dt.MaDeTai
