@@ -10,7 +10,13 @@ import javax.servlet.annotation.WebServlet;
 
 @WebServlet(name = "helloServlet", urlPatterns = {"/hello"})
 public class HelloServlet extends HttpServlet {
-    // GET, POST => Methods cách thức client gọi đường dẫn
+    /*
+        Nhận parameter từ HTTP client gửi lên
+        - Giữa GET và POST cách nhận parameter sẽ giống nhau
+        - GET: Parameter sẽ truyền trực tiếp trên URL
+        - POST: Parameter sẽ truyền qua thẻ FORM của HTML hoặc application, code gọi link với phương
+        thức POST (Parameter sẽ được truyền ngầm)
+     */
     @Override
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -18,5 +24,10 @@ public class HelloServlet extends HttpServlet {
         PrintWriter printwriter = resp.getWriter();
         printwriter.write("Hello Servlet world");
         printwriter.close();
+        // Lấy giá trị của tham số có tên là username và age
+        String username = req.getParameter("username");
+        int age = Integer.parseInt(req.getParameter("age"));
+        System.out.println("Debug: username = "+ username);
+        System.out.println("Debug: age = "+ age);
     }
 }
