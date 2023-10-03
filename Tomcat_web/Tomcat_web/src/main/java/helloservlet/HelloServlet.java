@@ -26,8 +26,9 @@ public class HelloServlet extends HttpServlet {
         printwriter.close();
         // Lấy giá trị của tham số có tên là username và age
         String username = req.getParameter("username");
-        int age = Integer.parseInt(req.getParameter("age"));
-        System.out.println("Debug: username = "+ username);
-        System.out.println("Debug: age = "+ age);
+//        int age = Integer.parseInt(req.getParameter("age"));
+//        System.out.println("Debug: username = "+ username);
+//        System.out.println("Debug: age = "+ age);
+        req.getRequestDispatcher("hello.jsp").forward(req, resp);
     }
 }
