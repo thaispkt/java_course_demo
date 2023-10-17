@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+ <%@ page isELIgnored ="false" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-
+<%
+    String email = (String) request.getAttribute("email");
+%>
 <div class="container">
   <div class="row mt-5">
     <div class="col-md-5 m-auto mt-5">
@@ -16,11 +21,12 @@
         <form action="/login" method="post">
             <div class="form-group">
               <label>Email</label>
-              <input type="email" class="form-control" name="email">
+              <input type="email" class="form-control" name="email" value="<%= email == null ? "": email %>">
             </div>
             <div class="form-group">
               <label>Mật khẩu</label>
-              <input type="password" class="form-control" name="password">
+              <input type="password" class="form-control" name="password" value="${password}">
+              <!-- Dùng expression nếu như ko cần xử lý logic code value="${password}"-->
             </div>
             <div class="form-group">
                 <input type="checkbox" name="remember"> Remember me in the next time

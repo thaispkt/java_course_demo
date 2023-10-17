@@ -1,0 +1,2 @@
+https://support.google.com/chrome/answer/157179?hl=en&co=GENIE.Platform%3DDesktop
+Reload the current page, ignoring cached content	Shift + F5 or Ctrl + Shift + r

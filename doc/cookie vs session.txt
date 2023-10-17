@@ -1,0 +1,80 @@
+Cookie được áp dụng làm giỏ hàng, khi F5 thì giỏ hàng ko bị mất
+cookie được lưu theo kiểu key-value
+Nếu ko set setMaxAge thì cookie sẽ tồn tại mãi mãi
+setMaxAge
+setValue(String value)
+String getName()
+Trả về tên của cookie
+String name 
+Cookie là do server request client tạo
+Cookie accept all: là lấy được cookie của những domain khác, của những trang web khác
+Cookie có thể được mã hóa
+Cross-origin resource sharing (CORS)
+Hiện giờ đa số trang web ko còn dùng session mà dùng cookie
+
+Tomcat cache: dẫn đến ko effect với code mới
+        Cookie[] cookieList = req.getCookies();
+        for(Cookie cookie: cookieList) {
+            if(cookie.getName().equals("username")) {
+                System.out.println("username: " + cookie.getValue());
+            }
+            if(cookie.getName().equals("password")) {
+                System.out.println("password: " + cookie.getValue());
+            }
+        }
+
+Để cho trang web tự động fill password, ko bắt user nhập username, password lần 2 thì web server sẽ ghi username và password vào cookie. Frontend sẽ đọc từ cookie này để tự động fill username và password
+session: session ID duy nhất, tránh tình trạng 1 client khác lấy session này -> session ID lưu trữ trên thanh RAM server
+
+How to 
+
+
+        req.setAttribute("username","thainguyen");
+		req.setAttribute("password","123456");
+        req.getRequestDispatcher("login.html").forward(req, resp);
+		
+I am deploying Apache Tomcat/9.0.80 on Intellij Idea IDE. After I press the button "Run Tomcat server" then Intellij Idea IDE will build server web source code and listen at http://localhost:8080/. Because of Tomcat cache, some new code has not been effect. For ex: after I access http://localhost:8080/login then below code has not been executed. Show me the way to clear cache of Tomcat server 
+
+        HttpSession session = req.getSession();
+        String likeCount = (String) session.getAttribute("like-count");
+        System.out.println("Like count: " + likeCount);
+
+# BEGIN LoginServlet.java
+package helloservlet;
+
+import mysql.config.MySqlConfig;
+import servlet.entity.UserEntity;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.*;
+
+@WebServlet(name = "loginServlet", urlPatterns = {"/login"})
+public class LoginServlet extends HttpServlet {
+    // GET, POST => Methods cách thức HTTP client gọi đường dẫn
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        // TODO Auto-generated method stub
+        HttpSession session = req.getSession();
+        String likeCount = (String) session.getAttribute("like-count");
+        System.out.println("Like count: " + likeCount);
+        HttpSession save_session = req.getSession();
+        save_session.setAttribute("like-count","3");
+        // Get session
+        req.setAttribute();
+        req.getRequestDispatcher("login.html").forward(req, resp);
+    }
+}
+
+# END LoginServlet.java
+
+C:\Users\nguye\.jdks\corretto-11.0.19\bin\java.exe -Dcatalina.home=C:\Users\nguye\java_course_demo\apache-tomcat-9.0.80 -Dcatalina.base=C:\Users\nguye\.SmartTomcat\Tomcat_web\Tomcat_web -Djava.io.tmpdir=C:\Users\nguye\.SmartTomcat\Tomcat_web\Tomcat_web\temp -Djava.util.logging.config.file=C:\Users\nguye\.SmartTomcat\Tomcat_web\Tomcat_web\conf\logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.4\lib\idea_rt.jar=55618:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.4\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\nguye\java_course_demo\apache-tomcat-9.0.80\bin\bootstrap.jar;C:\Users\nguye\java_course_demo\apache-tomcat-9.0.80\bin\tomcat-juli.jar org.apache.catalina.startup.Bootstrap start
