@@ -1,7 +1,7 @@
 package repository;
 
 import entity.UserEntity;
-import MySQLConfig.MySqlConfig;
+import mySQLConfig.MySqlConfig;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
