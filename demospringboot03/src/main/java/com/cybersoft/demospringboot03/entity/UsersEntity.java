@@ -1,12 +1,24 @@
-package entity;
+package com.cybersoft.demospringboot03.entity;
 
-public class UserEntity {
+import javax.persistence.*;
+
+@Entity(name = "users") // Tên bảng trong database (nhớ đúng tên bảng)
+public class UsersEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO) // GenerationType.IDENTITY để tăng tuần
+    // tự 1, 2, 3
+    // GenerationType.SEQUENCE: cho Oracle SQL
     private int id;
+    @Column(name = "email")
     private String email;
+    @Column(name = "password")
     private String password;
+    @Column(name = "fullname")
     private String fullname;
+    @Column(name = "avatar")
     private String avatar;
-    private int role_id;
+    @Column(name = "role_id")
+    private int roleId;
 
     public int getId() {
         return id;
@@ -48,11 +60,11 @@ public class UserEntity {
         this.avatar = avatar;
     }
 
-    public int getRole_id() {
-        return role_id;
+    public int getRoleId() {
+        return roleId;
     }
 
-    public void setRole_id(int role_id) {
-        this.role_id = role_id;
+    public void setRoleId(int roleId) {
+        this.roleId = roleId;
     }
 }
