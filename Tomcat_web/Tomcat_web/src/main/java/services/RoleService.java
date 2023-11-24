@@ -12,6 +12,8 @@ public class RoleService {
         return count > 0;
     }
     public List<RoleEntity> getAllRoles() {
+        System.out.println("In callee: public List<RoleEntity> getAllRoles()");
+        System.out.println("Call: return roleRepository.findAll()");
         return roleRepository.findAll();
     }
 
