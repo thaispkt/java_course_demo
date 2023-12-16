@@ -1,5 +1,6 @@
 package com.cybersoft.cozastore03.security;
 
+import com.cybersoft.cozastore03.filter.JwtFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,6 +10,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -16,6 +18,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -27,6 +30,9 @@ public class SecurityConfig {
 
     @Autowired
     private CustomAuthenProvider customAuthenProvider;
+
+    @Autowired
+    private JwtFilter jwtFilter;
 
     // Custome lai AuthenticationManager cua Security de su dung CustomAuthenPRovider ma minh toa ra
     @Bean
@@ -51,13 +57,17 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity.csrf().disable()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
                 .authorizeHttpRequests()
-                    .antMatchers("/login/**").permitAll()
+                    .antMatchers("/login/**", "/category/**","/file/**").permitAll()
+                .antMatchers(HttpMethod.GET,"/product/**").permitAll()
+//                .antMatchers(HttpMethod.POST,"/product").hasRole("ADMIN")
                 .antMatchers(HttpMethod.POST,"/product").hasRole("ADMIN")
                 .anyRequest().authenticated()
-                .and().httpBasic()
+                .and().addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
+//                .and().httpBasic()
                 // khác đều phải được check authentication
-                .and().build();
+                .build();
     }
-
 }

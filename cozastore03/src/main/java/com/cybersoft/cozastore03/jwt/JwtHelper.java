@@ -28,8 +28,8 @@ public class JwtHelper {
 //        long fututeMiliseconds = Calendar.getInstance().getTimeInMillis();
         long futureMilisecond = date.getTime() + expiredTime;
         Date futureDate = new Date(futureMilisecond);
-        System.out.println("Debug futureMilisecond = " + futureMilisecond);
-        System.out.println("Debug futureDate = " + futureDate.toString());
+//        System.out.println("Debug futureMilisecond = " + futureMilisecond);
+//        System.out.println("Debug futureDate = " + futureDate.toString());
         return Jwts.builder().subject(data).signWith(key).compact(); // compact() hàm để mã hóa
     }
 

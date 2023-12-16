@@ -19,16 +19,19 @@ public class LoginService implements LoginServiceImplementation {
     private UserRepository userRepository;
 
     @Override
-    public boolean checkLogin(String username, String password) {
+//    public boolean checkLogin(String username, String password) {
+    public UserEntity checkLogin(String username, String password) {
         UserEntity userEntity = userRepository.findByEmail(username);
         // Nếu truy vấn có dữ liệu nghĩa là user có tồn tại
         if(userEntity != null) {
             // kiểm tra password trong database có match với password mà user truyền lên hay ko
             if(passwordEncoder.matches(password,userEntity.getPassword())) {
-                return true;
+//                return true;
+                return userEntity;
             }
         }
-        return false;
+//        return false;
+        return null;
     }
     /*
     public boolean checkLogin(String username, String password) {

@@ -44,10 +44,11 @@ public class RoleController extends HttpServlet {
     }
 
     private void doGetRoleTable(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        logger.info("Entering doGetRoleTable(req, resp)");
+        logger.info("roleList = roleService.getAllRoles()");
         List<RoleEntity> roleList = roleService.getAllRoles();
         for (RoleEntity role : roleList) {
-            logger.info("Role Name: {}", role.getName());
+            logger.info("Iterating role : roleList");
+            logger.info("role_name = role.getName() = {}", role.getName());
         }
         req.setAttribute("listRole", roleList);
         req.getRequestDispatcher("role-table.jsp").forward(req, resp);

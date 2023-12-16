@@ -1,7 +1,10 @@
 package repository;
 
+import controller.RoleController;
 import entity.RoleEntity;
 import mySQLConfig.MySqlConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RoleRepository {
+    private static final Logger logger = LoggerFactory.getLogger(RoleRepository.class);
     public int deleteByID(int id) {
         int count = 0;
         String query = "DELETE FROM roles r WHERE r.id = ?";
@@ -26,15 +30,24 @@ public class RoleRepository {
     }
     public List<RoleEntity> findAll() {
         List<RoleEntity> roleList = new ArrayList<RoleEntity>();
+        logger.info("String query = \"SELECT * FROM roles\"");
         String query = "SELECT * FROM roles";
         try{
+            logger.info("Connection connection = MySqlConfig.getConnection()");
             Connection connection = MySqlConfig.getConnection();
+            logger.info("PreparedStatement preparedStatement = connection.prepareStatement(query)");
             PreparedStatement preparedStatement = connection.prepareStatement(query);
+            logger.info("ResultSet resultSet = preparedStatement.executeQuery()");
             ResultSet resultSet = preparedStatement.executeQuery();
             while(resultSet.next()) {
+                logger.info("while(resultSet.next())");
+                logger.info("RoleEntity roleEntity = new RoleEntity()");
                 RoleEntity roleEntity = new RoleEntity();
+                logger.info("roleEntity.setId(resultSet.getInt(\"id\"))");
                 roleEntity.setId(resultSet.getInt("id"));
+                logger.info("roleEntity.setName(resultSet.getString(\"name\"))");
                 roleEntity.setName(resultSet.getString("name"));
+                logger.info("roleEntity.setDesc(resultSet.getString(\"description\")");
                 roleEntity.setDesc(resultSet.getString("description"));
                 roleList.add(roleEntity);
             }
