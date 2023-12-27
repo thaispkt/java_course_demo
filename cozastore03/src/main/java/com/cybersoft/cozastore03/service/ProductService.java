@@ -8,6 +8,7 @@ import com.cybersoft.cozastore03.service.implementation.FileServiceImplementatio
 import com.cybersoft.cozastore03.service.implementation.ProductServiceImplementation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.ArrayList;
@@ -37,6 +38,9 @@ public class ProductService implements ProductServiceImplementation {
         }
         return dtoList;
     }
+//    @Transactional
+// Customize transaction cho những Exeception ko phải RunTime Exception
+//    @Transactional(rollbackFor = {RuntimeException.class, Exception.class})
     @Override
     public void save(MultipartFile file, String title, double price, int idCategory, String tag) {
         fileServiceImplemtation.save(file);
@@ -51,6 +55,10 @@ public class ProductService implements ProductServiceImplementation {
         productEntity.setCategory(category);
         try{
             productRepository.save(productEntity);
+            // -> data đã được record vào database dù exception do logic code đã xảy ra -> solution: đặt annotation
+            // @Transactional của thư viện Spring trước hàm Save() để rollback
+            // Chỉ thêm @Transactional trước ADD, DELETE, MODIFY, ko cần đặt trước GET
+            throw new RuntimeException("Cố tình throw exception");
         } catch (Exception e) {
             throw new RuntimeException("Error insert product: " + e.getMessage());
         }

@@ -60,7 +60,7 @@ public class SecurityConfig {
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeHttpRequests()
-                    .antMatchers("/login/**", "/category/**","/file/**").permitAll()
+                    .antMatchers("/login/**", "/category/**","/file/**","/publish/**").permitAll()
                 .antMatchers(HttpMethod.GET,"/product/**").permitAll()
 //                .antMatchers(HttpMethod.POST,"/product").hasRole("ADMIN")
                 .antMatchers(HttpMethod.POST,"/product").hasRole("ADMIN")
